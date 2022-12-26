@@ -1,24 +1,46 @@
+/* Imports */
 const fs = require("fs");
 const colors = require("./colors/colors.js");
 const filePathVars = "./colors/yum-color-theme-vars.json";
 const filePathHex = "./themes/yum-color-theme.json";
-const mode = process.argv[2];
 
-async function main() {
+/* State Variables */
+const mode = process.argv[2];
+let fsWait = false;
+
+function watch(readFile, callback) {
+    console.log(`Watching for file changes on ${readFile} 👀`);
+    fs.watch(readFile, (event, filename) => {
+        if (filename && event === "change") {
+            if (fsWait) return;
+            fsWait = setTimeout(() => {
+                fsWait = false;
+            }, 100);
+            console.log(`${filename} file Changed`);
+            callback();
+        }
+    });
+}
+
+function main() {
     if (!mode || mode === "sync") {
-        await varsToHex();
-        await hexToVars();
-    } else if (mode === "hex") {
-        await varsToHex();
+        varsToHex();
+        hexToVars();
     } else if (mode === "vars") {
-        await hexToVars();
+        varsToHex();
+    } else if (mode === "vars:watch") {
+        watch(filePathVars, varsToHex);
+    } else if (mode === "hex") {
+        hexToVars();
+    } else if (mode === "hex:watch") {
+        watch(filePathHex, hexToVars);
     } else {
         console.log("Invalid mode: " + mode);
     }
 }
 
 // Replaces variables with hexValues
-async function varsToHex() {
+function varsToHex() {
     // Read from yum-color-theme-vars.json
     fs.readFile(filePathVars, "utf8", function (err, data) {
         let varsFile;
@@ -47,7 +69,7 @@ async function varsToHex() {
 }
 
 // Replaces hexValues with variables
-async function hexToVars() {
+function hexToVars() {
     // Read from yum-color-theme.json
     fs.readFile(filePathHex, "utf8", function (err, data) {
         let hexFile;
