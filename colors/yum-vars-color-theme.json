@@ -4,7 +4,7 @@
         "activityBar.background": "bgLight2",
 
         "editor.foreground": "txtDefault",
-        "editor.background": "#9e7a7a",
+        "editor.background": "bgDark1",
         "editorGutter.background": "bgDark2",
 
         "editor.lineHighlightBackground": "highlightLine",
@@ -24,7 +24,7 @@
         "scrollbarSlider.background": "#4E566680",
         "scrollbarSlider.hoverBackground": "#5A637580",
 
-        "sideBar.background": "#272727",
+        "sideBar.background": "bgDark1",
         "sideBar.foreground": "txtDefault",
         "sideBar.border": "bgDark2",
         "sideBarSectionHeader.background": "#282c34",
