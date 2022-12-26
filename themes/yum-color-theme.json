@@ -1,18 +1,18 @@
 {
     "name": "yum",
     "colors": {
-        "activityBar.background": "#ffffff1a",
+        "activityBar.background": "#363636",
 
         "editor.foreground": "#cccccc",
-        "editor.background": "#292929",
-        "editorGutter.background": "#9696961a",
+        "editor.background": "#272727",
+        "editorGutter.background": "#2F2F2F",
 
         "editor.lineHighlightBackground": "#6395ad27",
         "editorSuggestWidget.selectedBackground": "#1b94cd75",
         "editorWidget.background": "#313131",
         "editorSuggestWidget.highlightForeground": "#cc6e2f",
 
-        "input.background": "#292929",
+        "input.background": "#2F2F2F",
         "list.activeSelectionBackground": "#1b95cd42",
         "list.focusBackground": "#1b95cd25",
         "list.focusOutline": "#4c9bbf",
@@ -26,11 +26,11 @@
 
         "sideBar.background": "#272727",
         "sideBar.foreground": "#cccccc",
-        "sideBar.border": "#ffffff1a",
+        "sideBar.border": "#2F2F2F",
         "sideBarSectionHeader.background": "#282c34",
 
         "statusBar.foreground": "#cccccc",
-        "statusBar.background": "#ffffff1a",
+        "statusBar.background": "#2F2F2F",
         "statusBarItem.hoverBackground": "#2c313a",
         "statusBar.noFolderBackground": "#21252B",
         "statusBar.debuggingBackground": "#21252B",
@@ -63,7 +63,7 @@
         "titleBar.inactiveBackground": "#ffffff10",
         "titleBar.inactiveForeground": "#6B717D",
 
-        "badge.background": "#ffffff1a"
+        "badge.background": "#2F2F2F"
     },
     "tokenColors": [
         {

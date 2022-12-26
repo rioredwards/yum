@@ -1,18 +1,18 @@
 {
     "name": "yum",
     "colors": {
-        "activityBar.background": "#ffffff1a",
+        "activityBar.background": "bgLight2",
 
-        "editor.foreground": "fg1",
-        "editor.background": "bg1",
-        "editorGutter.background": "bg2",
+        "editor.foreground": "txtDefault",
+        "editor.background": "bgDark1",
+        "editorGutter.background": "bgDark2",
 
-        "editor.lineHighlightBackground": "#6395ad27",
+        "editor.lineHighlightBackground": "highlightLine",
         "editorSuggestWidget.selectedBackground": "#1b94cd75",
         "editorWidget.background": "#313131",
         "editorSuggestWidget.highlightForeground": "#cc6e2f",
 
-        "input.background": "bg1",
+        "input.background": "bgDark2",
         "list.activeSelectionBackground": "#1b95cd42",
         "list.focusBackground": "#1b95cd25",
         "list.focusOutline": "#4c9bbf",
@@ -25,12 +25,12 @@
         "scrollbarSlider.hoverBackground": "#5A637580",
 
         "sideBar.background": "#272727",
-        "sideBar.foreground": "fg1",
-        "sideBar.border": "#ffffff1a",
+        "sideBar.foreground": "txtDefault",
+        "sideBar.border": "bgDark2",
         "sideBarSectionHeader.background": "#282c34",
 
-        "statusBar.foreground": "fg1",
-        "statusBar.background": "#ffffff1a",
+        "statusBar.foreground": "txtDefault",
+        "statusBar.background": "bgDark2",
         "statusBarItem.hoverBackground": "#2c313a",
         "statusBar.noFolderBackground": "#21252B",
         "statusBar.debuggingBackground": "#21252B",
@@ -59,11 +59,11 @@
         "terminal.ansiBrightWhite": "#d7dae0",
 
         "titleBar.activeBackground": "#282c34",
-        "titleBar.activeForeground": "fg1",
+        "titleBar.activeForeground": "txtDefault",
         "titleBar.inactiveBackground": "#ffffff10",
         "titleBar.inactiveForeground": "#6B717D",
 
-        "badge.background": "#ffffff1a"
+        "badge.background": "bgDark2"
     },
     "tokenColors": [
         {
