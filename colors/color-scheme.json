@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "allowComments": true,
+    "allowTrailingCommas": true,
+    "description": "Colors",
+    "additionalProperties": true,
+    "patternProperties": {
+        "^.*$": {
+            "type": "string",
+            "format": "color"
+        }
+    }
+}

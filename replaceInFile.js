@@ -1,12 +1,32 @@
 /* Imports */
 const fs = require("fs");
-const colors = require("./colors/colors.js");
-const filePathVars = "./colors/yum-color-theme-vars.json";
+const filePathVars = "./colors/yum-vars-color-theme.json";
 const filePathHex = "./themes/yum-color-theme.json";
+const filePathColors = "./colors/colors.js";
 
 /* State Variables */
 const mode = process.argv[2];
 let fsWait = false;
+let colors = null;
+
+function main() {
+    if (!mode || mode === "sync") {
+        varsToHex();
+        hexToVars();
+    } else if (mode === "vars") {
+        varsToHex();
+    } else if (mode === "vars:watch") {
+        watch(filePathVars, varsToHex);
+    } else if (mode === "colors:watch") {
+        watch(filePathColors, varsToHex);
+    } else if (mode === "hex") {
+        hexToVars();
+    } else if (mode === "hex:watch") {
+        watch(filePathHex, hexToVars);
+    } else {
+        console.log("Invalid mode: " + mode);
+    }
+}
 
 function watch(readFile, callback) {
     console.log(`Watching for file changes on ${readFile} 👀`);
@@ -17,31 +37,36 @@ function watch(readFile, callback) {
                 fsWait = false;
             }, 100);
             console.log(`${filename} file Changed`);
-            callback();
+            if (readFile === filePathColors) {
+                console.log("colors: ", colors);
+                colors = null;
+                colors = require("./colors/colors.js");
+                console.log("newcolors: ", colors);
+            }
+            // callback(); // NOTE Uncomment
         }
     });
 }
 
-function main() {
-    if (!mode || mode === "sync") {
-        varsToHex();
-        hexToVars();
-    } else if (mode === "vars") {
-        varsToHex();
-    } else if (mode === "vars:watch") {
-        watch(filePathVars, varsToHex);
-    } else if (mode === "hex") {
-        hexToVars();
-    } else if (mode === "hex:watch") {
-        watch(filePathHex, hexToVars);
-    } else {
-        console.log("Invalid mode: " + mode);
-    }
+function createNewColors() {
+    fs.readFile(filePathColors, "utf8", function (err, data) {
+        let colorsFile;
+        if (err) {
+            return console.log(err);
+        } else {
+            colorsFile = data;
+            console.log("colorsFile: ", colorsFile);
+            console.log("colorsFile: ", colorsFile.bgDark1);
+            console.log("type of colorsFile: ", typeof colorsFile);
+        }
+    });
 }
+createNewColors();
 
 // Replaces variables with hexValues
 function varsToHex() {
     // Read from yum-color-theme-vars.json
+
     fs.readFile(filePathVars, "utf8", function (err, data) {
         let varsFile;
         if (err) {

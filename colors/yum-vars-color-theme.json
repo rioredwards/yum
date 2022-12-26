@@ -4,7 +4,7 @@
         "activityBar.background": "bgLight2",
 
         "editor.foreground": "txtDefault",
-        "editor.background": "bgDark1",
+        "editor.background": "#9e7a7a",
         "editorGutter.background": "bgDark2",
 
         "editor.lineHighlightBackground": "highlightLine",

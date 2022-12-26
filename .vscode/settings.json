@@ -1,0 +1,9 @@
+{
+    "editor.fontSize": 12,
+    "json.schemas": [
+        {
+            "fileMatch": ["*color.json"],
+            "url": "./colors/color-scheme.json"
+        }
+    ]
+}
