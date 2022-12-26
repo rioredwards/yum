@@ -4,7 +4,7 @@
         "activityBar.background": "#ffffff1a",
 
         "editor.foreground": "#cccccc",
-        "editor.background": "#292929",
+        "editor.background": "bg1",
         "editorGutter.background": "#9696961a",
 
         "editor.lineHighlightBackground": "#6395ad27",
@@ -12,7 +12,7 @@
         "editorWidget.background": "#313131",
         "editorSuggestWidget.highlightForeground": "#cc6e2f",
 
-        "input.background": "#292929",
+        "input.background": "bg1",
         "list.activeSelectionBackground": "#1b95cd42",
         "list.focusBackground": "#1b95cd25",
         "list.focusOutline": "#4c9bbf",
