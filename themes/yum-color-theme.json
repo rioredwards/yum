@@ -1,14 +1,17 @@
 {
     "name": "yum",
     "colors": {
-        /* Editor */
         "editor.foreground": "#cccccc",
         "editor.background": "#272727",
         "editorGutter.background": "#2F2F2F",
         "editor.lineHighlightBackground": "#1b95cd24",
         "editorWidget.background": "#2F2F2F",
         "editorSuggestWidget.selectedBackground": "#1b94cd75",
-        "editorSuggestWidget.highlightForeground": "#cc6e2f",
+        "editorSuggestWidget.highlightForeground": "#dc7d3d96",
+        "editorHoverWidget.border": "#474747",
+        "editorHoverWidget.background": "#2F2F2F",
+        "editorHoverWidget.foreground": "#cccccc",
+        "editorStickyScroll.background": "#272727",
 
         "activityBar.background": "#3a3a3a",
         "activityBar.foreground": "#3da2d1",
@@ -22,6 +25,10 @@
         "titleBar.inactiveForeground": "#cccccc",
 
         "input.background": "#212121",
+        "input.foreground": "#cccccc",
+        "input.border": "#1b94cd75",
+        "inputOption.hoverBackground": "#cecece29",
+
         "list.activeSelectionBackground": "#1b94cd75",
         "list.inactiveSelectionBackground": "#cecece29",
         "list.focusBackground": "#1b95cd42",
@@ -47,7 +54,12 @@
         "tab.activeBackground": "#1b95cd42",
         "tab.activeBorder": "#1b94cd75",
 
-        "terminal.foreground": "#cccccc"
+        "quickInput.background": "#2F2F2F",
+        "quickInputList.focusBackground": "#1b94cd75",
+        "quickInput.foreground": "#cccccc",
+
+        "panel.background": "#212121",
+        "panelTitle.activeForeground": "#cccccc"
     },
     "tokenColors": [
         {

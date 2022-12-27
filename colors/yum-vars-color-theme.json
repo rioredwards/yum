@@ -1,7 +1,6 @@
 {
     "name": "yum",
     "colors": {
-        /* Editor */
         "editor.foreground": "txtDefault",
         "editor.background": "bgDark2",
         "editorGutter.background": "bgLight1",
@@ -9,6 +8,10 @@
         "editorWidget.background": "bgLight1",
         "editorSuggestWidget.selectedBackground": "highlightActive1",
         "editorSuggestWidget.highlightForeground": "highlightAlt1",
+        "editorHoverWidget.border": "bgLight3",
+        "editorHoverWidget.background": "bgLight1",
+        "editorHoverWidget.foreground": "txtDefault",
+        "editorStickyScroll.background": "bgDark2",
 
         "activityBar.background": "bgLight2",
         "activityBar.foreground": "txtSelected",
@@ -22,6 +25,10 @@
         "titleBar.inactiveForeground": "txtDefault",
 
         "input.background": "bgDark1",
+        "input.foreground": "txtDefault",
+        "input.border": "highlightActive1",
+        "inputOption.hoverBackground": "highlightInActive2",
+
         "list.activeSelectionBackground": "highlightActive1",
         "list.inactiveSelectionBackground": "highlightInActive2",
         "list.focusBackground": "highlightActive2",
@@ -47,7 +54,12 @@
         "tab.activeBackground": "highlightActive2",
         "tab.activeBorder": "highlightActive1",
 
-        "terminal.foreground": "txtDefault"
+        "quickInput.background": "bgLight1",
+        "quickInputList.focusBackground": "highlightActive1",
+        "quickInput.foreground": "txtDefault",
+
+        "panel.background": "bgDark1",
+        "panelTitle.activeForeground": "txtDefault"
     },
     "tokenColors": [
         {

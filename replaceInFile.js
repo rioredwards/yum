@@ -1,33 +1,64 @@
 /* Imports */
 const fs = require("fs");
-const filePathVars = "./colors/yum-vars-color-theme.json";
-const filePathColors = "./colors/theme-color.json";
-const filePathHex = "./themes/yum-color-theme.json";
-
-/* State Variables */
-const mode = process.argv[2];
-let fsWait = false;
-let colors = null;
+const varsFilePath = "./colors/yum-vars-color-theme.json";
+const colorsFilePath = "./colors/theme-color.json";
+const hexFilePath = "./themes/yum-color-theme.json";
 
 function main() {
-    updateColors();
-    if (!mode || mode === "sync") {
-        varsToHex();
-        hexToVars();
-    } else if (mode === "vars") {
-        varsToHex();
-    } else if (mode === "vars:watch") {
-        watch(filePathVars, varsToHex);
-    } else if (mode === "colors:watch") {
-        watch(filePathColors, varsToHex);
+    /* Declare State Variables */
+    const mode = process.argv[2];
+    let readFilePath;
+    let writeFilePath;
+    let colors;
+    let fsWait = false;
+
+    // Set Read/Write file path based on mode
+    if (mode === "vars") {
+        readFilePath = varsFilePath;
+        writeFilePath = hexFilePath;
     } else if (mode === "hex") {
-        hexToVars();
-    } else if (mode === "hex:watch") {
-        watch(filePathHex, hexToVars);
+        readFilePath = hexFilePath;
+        writeFilePath = varsFilePath;
+    } else if (mode == "colors") {
+        // ???
     } else {
-        console.log("Invalid mode: " + mode);
+        // ???
     }
+
+    // get colors & readFile contents
+    colors = JSON.parse(getFileContents(colorsFilePath));
+    let readFileStr = getFileContents(readFilePath);
+
+    for (const color in colors) {
+        // Set prevStr & newStr based on mode
+        let prevStr = mode === "vars" ? color : colors[color];
+        let newStr = mode === "vars" ? colors[color] : color;
+        // Create new modified str
+        readFileStr = replaceStrInFile(updatedFile, prevStr, newStr);
+    }
+
+    // rewrite writeFile with new string
+    fs.writeFileSync(writeFilePath, readFileStr, "utf8");
+
+    // if (mode === "vars:watch") {
+    //     watch(varsFilePath, varsToHex);
+    // } else if (mode === "colors:watch") {
+    //     watch(colorsFilePath, varsToHex);
+    // } else if (mode === "hex") {
+    //     hexToVars();
+    // } else if (mode === "hex:watch") {
+    //     watch(hexFilePath, hexToVars);
+    // } else {
+    //     console.log("Invalid mode: " + mode);
+    // }
 }
+
+function replaceStrInFile(file, prevStr, newStr) {
+    let regex = new RegExp(prevStr, "g");
+    return file.replace(regex, newStr);
+}
+
+console.log(`In ${readFilePath}: replaced: ${prevStr} with: ${newStr}`);
 
 function watch(readFile, callback) {
     console.log(`Watching for file changes on ${readFile} 👀`);
@@ -38,7 +69,7 @@ function watch(readFile, callback) {
                 fsWait = false;
             }, 100);
             console.log(`${filename} file Changed`);
-            if (readFile === filePathColors) {
+            if (readFile === colorsFilePath) {
                 updateColors();
             }
             callback();
@@ -46,16 +77,14 @@ function watch(readFile, callback) {
     });
 }
 
-// Read from theme-color.json and create colors obj
-function updateColors() {
-    const colorsFile = fs.readFileSync(filePathColors, "utf8");
-    colors = JSON.parse(colorsFile);
+function getFileContents(filePath) {
+    return fs.readFileSync(filePath, "utf8");
 }
 
 // Replaces variables with hexValues
 function varsToHex() {
     // Read from yum-color-theme-vars.json
-    let varsFile = fs.readFileSync(filePathVars, "utf8");
+    let varsFile = fs.readFileSync(varsFilePath, "utf8");
 
     // create new string with variables replaced with hex values
     for (const color in colors) {
@@ -64,18 +93,18 @@ function varsToHex() {
         varsFile = newVarsFile;
 
         console.log(
-            `In ${filePathHex}: replaced: ${color} with: ${colors[color]}`
+            `In ${hexFilePath}: replaced: ${color} with: ${colors[color]}`
         );
     }
 
     // rewrite yum-color-theme.json with new string
-    fs.writeFileSync(filePathHex, varsFile, "utf8");
+    fs.writeFileSync(hexFilePath, varsFile, "utf8");
 }
 
 // Replaces hexValues with variables
 function hexToVars() {
     // Read from yum-color-theme.json
-    let hexFile = fs.readFileSync(filePathHex, "utf8");
+    let hexFile = fs.readFileSync(hexFilePath, "utf8");
 
     // create new string with hex values replaced with variables
     for (const color in colors) {
@@ -84,12 +113,12 @@ function hexToVars() {
         hexFile = newHexFile;
 
         console.log(
-            `In ${filePathVars}: replaced: ${colors[color]} with: ${colors}`
+            `In ${varsFilePath}: replaced: ${colors[color]} with: ${colors}`
         );
     }
 
     // rewrite yum-color-theme-vars.json with new string
-    fs.writeFileSync(filePathVars, hexFile, "utf8");
+    fs.writeFileSync(varsFilePath, hexFile, "utf8");
 }
 
 main();
