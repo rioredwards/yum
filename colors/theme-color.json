@@ -1,11 +1,20 @@
 {
-    "bgDark1": "#272727",
-
-    "bgDark2": "#2F2F2F",
-    "bgLight1": "#333333",
-    "bgLight2": "#363636",
+    "bgDark1": "#212121",
+    "bgDark2": "#272727",
+    "bgLight1": "#2F2F2F",
+    "bgLight2": "#3a3a3a",
+    "bgLight3": "#474747",
 
     "txtDefault": "#cccccc",
+    "txtSelected": "#3da2d1",
+    "txtInactive": "#959595",
 
-    "highlightLine": "#6395ad27"
+    "highlightActive1": "#1b94cd75",
+    "highlightActive2": "#1b95cd42",
+    "highlightActive3": "#1b95cd24",
+    "highlightInActive1": "#cecece37",
+    "highlightInActive2": "#cecece29",
+    "highlightInactive3": "#cecece1a",
+    "highlightAlt1": "#cc6e2f",
+    "highlightAlt2": "#34bd4191"
 }
