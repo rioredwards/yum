@@ -10,115 +10,98 @@ function main() {
     let readFilePath;
     let writeFilePath;
     let colors;
-    let fsWait = false;
+    let replaceStrArray = [];
+    // let updatedFile;
+
+    // get colors contents
+    colors = getColors(colorsFilePath);
+    // format into replaceStrArray based on mode
+    replaceStrArray = createReplaceStrArray(colors, mode);
 
     // Set Read/Write file path based on mode
     if (mode === "vars") {
         readFilePath = varsFilePath;
         writeFilePath = hexFilePath;
+        logger("files", { readFilePath, writeFilePath });
+        syncFiles(readFilePath, writeFilePath, replaceStrArray);
     } else if (mode === "hex") {
         readFilePath = hexFilePath;
         writeFilePath = varsFilePath;
-    } else if (mode == "colors") {
-        // ???
-    } else {
-        // ???
+        logger("files", { readFilePath, writeFilePath });
+        syncFiles(readFilePath, writeFilePath, replaceStrArray);
+    } else if (mode === "colors") {
+        readFilePath = varsFilePath;
+        writeFilePath = hexFilePath;
+        logger("files", { readFilePath, writeFilePath });
+        syncFiles(readFilePath, writeFilePath, replaceStrArray);
     }
+}
 
-    // get colors & readFile contents
-    colors = JSON.parse(getFileContents(colorsFilePath));
+function syncFiles(readFilePath, writeFilePath, replaceStrArray) {
+    // get readFile contents
     let readFileStr = getFileContents(readFilePath);
-
-    for (const color in colors) {
-        // Set prevStr & newStr based on mode
-        let prevStr = mode === "vars" ? color : colors[color];
-        let newStr = mode === "vars" ? colors[color] : color;
-        // Create new modified str
-        readFileStr = replaceStrInFile(updatedFile, prevStr, newStr);
+    // Update readFileStr
+    for (const row of replaceStrArray) {
+        const newReadFileStr = replaceStrInFile(readFileStr, row.prev, row.new);
+        readFileStr = newReadFileStr;
     }
-
     // rewrite writeFile with new string
     fs.writeFileSync(writeFilePath, readFileStr, "utf8");
-
-    // if (mode === "vars:watch") {
-    //     watch(varsFilePath, varsToHex);
-    // } else if (mode === "colors:watch") {
-    //     watch(colorsFilePath, varsToHex);
-    // } else if (mode === "hex") {
-    //     hexToVars();
-    // } else if (mode === "hex:watch") {
-    //     watch(hexFilePath, hexToVars);
-    // } else {
-    //     console.log("Invalid mode: " + mode);
-    // }
 }
 
 function replaceStrInFile(file, prevStr, newStr) {
+    logger("replacing", { prevStr, newStr });
     let regex = new RegExp(prevStr, "g");
     return file.replace(regex, newStr);
-}
-
-console.log(`In ${readFilePath}: replaced: ${prevStr} with: ${newStr}`);
-
-function watch(readFile, callback) {
-    console.log(`Watching for file changes on ${readFile} 👀`);
-    fs.watch(readFile, (event, filename) => {
-        if (filename && event === "change") {
-            if (fsWait) return;
-            fsWait = setTimeout(() => {
-                fsWait = false;
-            }, 100);
-            console.log(`${filename} file Changed`);
-            if (readFile === colorsFilePath) {
-                updateColors();
-            }
-            callback();
-        }
-    });
 }
 
 function getFileContents(filePath) {
     return fs.readFileSync(filePath, "utf8");
 }
 
-// Replaces variables with hexValues
-function varsToHex() {
-    // Read from yum-color-theme-vars.json
-    let varsFile = fs.readFileSync(varsFilePath, "utf8");
-
-    // create new string with variables replaced with hex values
-    for (const color in colors) {
-        let regex = new RegExp(color, "g");
-        const newVarsFile = varsFile.replace(regex, colors[color]);
-        varsFile = newVarsFile;
-
-        console.log(
-            `In ${hexFilePath}: replaced: ${color} with: ${colors[color]}`
-        );
-    }
-
-    // rewrite yum-color-theme.json with new string
-    fs.writeFileSync(hexFilePath, varsFile, "utf8");
+function getColors(colorsFilePath) {
+    return JSON.parse(getFileContents(colorsFilePath));
 }
 
-// Replaces hexValues with variables
-function hexToVars() {
-    // Read from yum-color-theme.json
-    let hexFile = fs.readFileSync(hexFilePath, "utf8");
-
-    // create new string with hex values replaced with variables
-    for (const color in colors) {
-        let regex = new RegExp(colors[color], "g");
-        const newHexFile = hexFile.replace(regex, color);
-        hexFile = newHexFile;
-
-        console.log(
-            `In ${varsFilePath}: replaced: ${colors[color]} with: ${colors}`
-        );
+function createReplaceStrArray(Array, mode) {
+    let newArray = [];
+    for (const [key, value] of Object.entries(Array)) {
+        if (mode === "vars") {
+            newArray.push({ prev: key, new: value });
+        } else {
+            newArray.push({ prev: value, new: key });
+        }
     }
+    return newArray;
+}
 
-    // rewrite yum-color-theme-vars.json with new string
-    fs.writeFileSync(varsFilePath, hexFile, "utf8");
+/* function watchFiles(files, callback) {
+    let fsWait = false;
+    console.log(`Watching for file changes on ${files} 👀`);
+    for (const file of files) {
+        fs.watch(file, (event, filename) => {
+            if (filename && event === "change") {
+                if (fsWait) return;
+                fsWait = setTimeout(() => {
+                    fsWait = false;
+                }, 100);
+                console.log(`${filename} file Changed`);
+                if (file === colorsFilePath) {
+                    colors = getColors(colorsFilePath);
+                }
+                callback();
+            }
+        });
+    }
+} */
+
+function logger(prompt, data) {
+    if (prompt === "files") {
+        console.log("Readfile: ", data.readFilePath);
+        console.log("Writefile: ", data.writeFilePath);
+    } else if (prompt === "replacing") {
+        console.log(`Replacing: ${data.prevStr} with ${data.newStr}`);
+    }
 }
 
 main();
