@@ -4,15 +4,16 @@ const varsFilePath = "./colors/yum-vars-color-theme.json";
 const colorsFilePath = "./colors/theme-color.json";
 const hexFilePath = "./themes/yum-color-theme.json";
 
-function main() {
-    /* Declare State Variables */
-    const mode = process.argv[2];
-    let readFilePath;
-    let writeFilePath;
-    let colors;
-    let replaceStrArray = [];
-    // let updatedFile;
+/* Declare State Variables */
+// const mode = "watch";
+const mode = process.argv[2];
+let readFilePath;
+let writeFilePath;
+let colors;
+let replaceStrArray = [];
+let fsWait = false;
 
+function main() {
     // get colors contents
     colors = getColors(colorsFilePath);
     // format into replaceStrArray based on mode
@@ -34,7 +35,29 @@ function main() {
         writeFilePath = hexFilePath;
         logger("files", { readFilePath, writeFilePath });
         syncFiles(readFilePath, writeFilePath, replaceStrArray);
+    } else if (mode === "watch") {
+        readFilePath = varsFilePath;
+        writeFilePath = hexFilePath;
+        watchFile(varsFilePath, syncFiles);
     }
+}
+
+function watchFile(file, callback) {
+    console.log(`Watching for file changes on ${file} 👀`);
+    fs.watch(file, (event, filename) => {
+        if (filename && event === "change") {
+            if (fsWait) return;
+            fsWait = setTimeout(() => {
+                fsWait = false;
+            }, 100);
+            console.log(`${filename} file Changed`);
+            if (file === colorsFilePath) {
+                colors = getColors(colorsFilePath);
+                replaceStrArray = createReplaceStrArray(colors, mode);
+            }
+            callback(readFilePath, writeFilePath, replaceStrArray);
+        }
+    });
 }
 
 function syncFiles(readFilePath, writeFilePath, replaceStrArray) {
@@ -66,34 +89,14 @@ function getColors(colorsFilePath) {
 function createReplaceStrArray(Array, mode) {
     let newArray = [];
     for (const [key, value] of Object.entries(Array)) {
-        if (mode === "vars") {
-            newArray.push({ prev: key, new: value });
-        } else {
+        if (mode === "hex") {
             newArray.push({ prev: value, new: key });
+        } else {
+            newArray.push({ prev: key, new: value });
         }
     }
     return newArray;
 }
-
-/* function watchFiles(files, callback) {
-    let fsWait = false;
-    console.log(`Watching for file changes on ${files} 👀`);
-    for (const file of files) {
-        fs.watch(file, (event, filename) => {
-            if (filename && event === "change") {
-                if (fsWait) return;
-                fsWait = setTimeout(() => {
-                    fsWait = false;
-                }, 100);
-                console.log(`${filename} file Changed`);
-                if (file === colorsFilePath) {
-                    colors = getColors(colorsFilePath);
-                }
-                callback();
-            }
-        });
-    }
-} */
 
 function logger(prompt, data) {
     if (prompt === "files") {
