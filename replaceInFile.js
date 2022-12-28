@@ -55,7 +55,8 @@ function watchFile(file, callback) {
             console.log(`${filename} file Changed`);
             if (file === colorsFilePath) {
                 colors = getColors(colorsFilePath);
-                replaceStrArray = createReplaceStrArray(colors, mode);
+                if (colors)
+                    replaceStrArray = createReplaceStrArray(colors, mode);
             }
             callback(readFilePath, writeFilePath, replaceStrArray);
         }
@@ -85,7 +86,15 @@ function getFileContents(filePath) {
 }
 
 function getColors(colorsFilePath) {
-    return JSON.parse(getFileContents(colorsFilePath));
+    const colorsRaw = getFileContents(colorsFilePath);
+    let colorsObj = null;
+    try {
+        colorsObj = JSON.parse(colorsRaw);
+    } catch (error) {
+        console.warn(error);
+    } finally {
+        return colorsObj;
+    }
 }
 
 function createReplaceStrArray(Array, mode) {

@@ -53,5 +53,9 @@
     "tkViolet1": "#bd92ea",
     "tkViolet2": "#a067c6",
     "tkPink1": "#d9a7da",
-    "tkPink2": "#cd81c7"
+    "tkPink2": "#cd81c7",
+
+    "tkTrue": "#34b73c",
+    "tkFalse": "#d33223",
+    "tkUndefined": "#e26868"
 }
