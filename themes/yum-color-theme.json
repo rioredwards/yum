@@ -1,6 +1,19 @@
 {
     "name": "yum",
     "colors": {
+        "focusBorder": "#24a8e590",
+        "foreground": "#cccccc",
+        "disabledForeground": "#959595",
+        "selection.background": "#1b94cd75",
+        "descriptionForeground": "#959595",
+        "icon.foreground": "#cccccc",
+
+        "textLink.foreground": "#3da2d1",
+        "textLink.activeForeground": "#5fbce8",
+
+        "toolbar.hoverBackground": "#cecece37",
+        "toolbar.activeBackground": "#24a8e590",
+
         "editor.foreground": "#cccccc",
         "editor.background": "#272727",
         "editorGutter.background": "#2F2F2F",
@@ -18,21 +31,32 @@
         "activityBar.activeBackground": "#474747",
         "activityBar.inactiveForeground": "#959595",
         "activityBarBadge.background": "#3da2d1",
+        "activityBarBadge.foreground": "#f8f8f8",
 
         "titleBar.activeBackground": "#3a3a3a",
         "titleBar.activeForeground": "#cccccc",
         "titleBar.inactiveBackground": "#2F2F2F",
         "titleBar.inactiveForeground": "#cccccc",
 
-        "input.background": "#212121",
+        "input.background": "#272727",
         "input.foreground": "#cccccc",
         "input.border": "#1b94cd75",
+        "input.placeholderForeground": "#959595",
+        "inputOption.activeBackground": "#1b94cd75",
+        "inputOption.activeBorder": "#1b94cd75",
         "inputOption.hoverBackground": "#cecece29",
 
+        "button.background": "#1b94cd75",
+        "button.foreground": "#f8f8f8",
+        "button.hoverBackground": "#24a8e590",
+
+        "badge.background": "#cecece37",
+
         "list.activeSelectionBackground": "#1b94cd75",
+        "list.activeSelectionForeground": "#f8f8f8",
         "list.inactiveSelectionBackground": "#cecece29",
         "list.focusBackground": "#1b95cd42",
-        "list.focusOutline": "#1b94cd75",
+        "list.focusOutline": "#00000000",
         "list.hoverBackground": "#cecece1a",
 
         "scrollbarSlider.activeBackground": "#1b94cd75",
@@ -43,7 +67,6 @@
         "sideBar.foreground": "#cccccc",
         "sideBar.border": "#3a3a3a",
         "sideBarSectionHeader.background": "#3a3a3a",
-        "badge.background": "#cecece37",
 
         "statusBar.foreground": "#cccccc",
         "statusBar.background": "#3a3a3a",
@@ -56,6 +79,7 @@
 
         "quickInput.background": "#2F2F2F",
         "quickInputList.focusBackground": "#1b94cd75",
+        "quickInputList.focusForeground": "#f8f8f8",
         "quickInput.foreground": "#cccccc",
 
         "panel.background": "#212121",

@@ -1,12 +1,25 @@
 {
     "name": "yum",
     "colors": {
+        "focusBorder": "highlightActive1",
+        "foreground": "txtDefault",
+        "disabledForeground": "txtInactive",
+        "selection.background": "highlightActive2",
+        "descriptionForeground": "txtInactive",
+        "icon.foreground": "txtDefault",
+
+        "textLink.foreground": "txtLinkInactive",
+        "textLink.activeForeground": "txtLinkActive",
+
+        "toolbar.hoverBackground": "highlightInActive1",
+        "toolbar.activeBackground": "highlightActive1",
+
         "editor.foreground": "txtDefault",
         "editor.background": "bgDark2",
         "editorGutter.background": "bgLight1",
-        "editor.lineHighlightBackground": "highlightActive3",
+        "editor.lineHighlightBackground": "highlightActive4",
         "editorWidget.background": "bgLight1",
-        "editorSuggestWidget.selectedBackground": "highlightActive1",
+        "editorSuggestWidget.selectedBackground": "highlightActive2",
         "editorSuggestWidget.highlightForeground": "highlightAlt1",
         "editorHoverWidget.border": "bgLight3",
         "editorHoverWidget.background": "bgLight1",
@@ -18,32 +31,42 @@
         "activityBar.activeBackground": "bgLight3",
         "activityBar.inactiveForeground": "txtInactive",
         "activityBarBadge.background": "txtSelected",
+        "activityBarBadge.foreground": "txtLight",
 
         "titleBar.activeBackground": "bgLight2",
         "titleBar.activeForeground": "txtDefault",
         "titleBar.inactiveBackground": "bgLight1",
         "titleBar.inactiveForeground": "txtDefault",
 
-        "input.background": "bgDark1",
+        "input.background": "bgDark2",
         "input.foreground": "txtDefault",
-        "input.border": "highlightActive1",
+        "input.border": "highlightActive2",
+        "input.placeholderForeground": "txtInactive",
+        "inputOption.activeBackground": "highlightActive2",
+        "inputOption.activeBorder": "highlightActive2",
         "inputOption.hoverBackground": "highlightInActive2",
 
-        "list.activeSelectionBackground": "highlightActive1",
+        "button.background": "highlightActive2",
+        "button.foreground": "txtLight",
+        "button.hoverBackground": "highlightActive1",
+
+        "badge.background": "highlightInActive1",
+
+        "list.activeSelectionBackground": "highlightActive2",
+        "list.activeSelectionForeground": "txtLight",
         "list.inactiveSelectionBackground": "highlightInActive2",
-        "list.focusBackground": "highlightActive2",
-        "list.focusOutline": "highlightActive1",
+        "list.focusBackground": "highlightActive3",
+        "list.focusOutline": "transparent",
         "list.hoverBackground": "highlightInactive3",
 
-        "scrollbarSlider.activeBackground": "highlightActive1",
-        "scrollbarSlider.hoverBackground": "highlightActive2",
+        "scrollbarSlider.activeBackground": "highlightActive2",
+        "scrollbarSlider.hoverBackground": "highlightActive3",
         "scrollbarSlider.background": "highlightInActive2",
 
         "sideBar.background": "bgDark2",
         "sideBar.foreground": "txtDefault",
         "sideBar.border": "bgLight2",
         "sideBarSectionHeader.background": "bgLight2",
-        "badge.background": "highlightInActive1",
 
         "statusBar.foreground": "txtDefault",
         "statusBar.background": "bgLight2",
@@ -51,11 +74,12 @@
 
         "tab.inactiveBackground": "bgLight1",
         "tab.border": "bgLight2",
-        "tab.activeBackground": "highlightActive2",
-        "tab.activeBorder": "highlightActive1",
+        "tab.activeBackground": "highlightActive3",
+        "tab.activeBorder": "highlightActive2",
 
         "quickInput.background": "bgLight1",
-        "quickInputList.focusBackground": "highlightActive1",
+        "quickInputList.focusBackground": "highlightActive2",
+        "quickInputList.focusForeground": "txtLight",
         "quickInput.foreground": "txtDefault",
 
         "panel.background": "bgDark1",

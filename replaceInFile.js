@@ -5,8 +5,7 @@ const colorsFilePath = "./colors/theme-color.json";
 const hexFilePath = "./themes/yum-color-theme.json";
 
 /* Declare State Variables */
-// const mode = process.argv[2];
-const mode = "watch";
+const mode = process.argv[2];
 let readFilePath;
 let writeFilePath;
 let colors;
@@ -40,6 +39,8 @@ function main() {
         writeFilePath = hexFilePath;
         watchFile(varsFilePath, syncFiles);
         watchFile(colorsFilePath, syncFiles);
+    } else {
+        console.log("Incorrect input for mode");
     }
 }
 
