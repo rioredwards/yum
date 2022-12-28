@@ -98,7 +98,7 @@
             "name": "Variables",
             "scope": ["variable", "string constant.other.placeholder"],
             "settings": {
-                "foreground": "#EEFFFF"
+                "foreground": "tkWhite2"
             }
         },
         {
@@ -119,7 +119,15 @@
             "name": "Keyword, Storage",
             "scope": ["keyword", "storage.type", "storage.modifier"],
             "settings": {
-                "foreground": "#C792EA"
+                "foreground": "tkRedOrange2"
+            }
+        },
+        {
+            "name": "Functions",
+            "scope": ["storage.type.function"],
+            "settings": {
+                "foreground": "tkGreen2",
+                "fontStyle": "bold"
             }
         },
         {
@@ -127,16 +135,34 @@
             "scope": [
                 "keyword.control",
                 "constant.other.color",
-                "punctuation",
                 "meta.tag",
+                "keyword.other.template",
+                "keyword.other.substitution"
+            ],
+            "settings": {
+                "foreground": "tkIndigo1"
+            }
+        },
+        {
+            "name": "logical operators",
+            "scope": [
+                "keyword.operator.comparison",
+                "keyword.operator.logical"
+            ],
+            "settings": {
+                "foreground": "tkIndigo1"
+            }
+        },
+        {
+            "name": "punctuation",
+            "scope": [
+                "punctuation",
                 "punctuation.definition.tag",
                 "punctuation.separator.inheritance.php",
                 "punctuation.definition.tag.html",
                 "punctuation.definition.tag.begin.html",
                 "punctuation.definition.tag.end.html",
-                "punctuation.section.embedded",
-                "keyword.other.template",
-                "keyword.other.substitution"
+                "punctuation.section.embedded"
             ],
             "settings": {
                 "foreground": "tkBabyBlue1"
@@ -163,14 +189,21 @@
                 "keyword.other.special-method"
             ],
             "settings": {
-                "foreground": "#82AAFF"
+                "foreground": "tkOrangeYellow2"
             }
         },
         {
             "name": "Block Level Variables",
             "scope": ["meta.block variable.other"],
             "settings": {
-                "foreground": "#f07178"
+                "foreground": "tkWhite2"
+            }
+        },
+        {
+            "name": "Varaible properties",
+            "scope": ["variable.other.property"],
+            "settings": {
+                "foreground": "tkRedOrange2"
             }
         },
         {
@@ -193,7 +226,7 @@
                 "keyword.other"
             ],
             "settings": {
-                "foreground": "#F78C6C"
+                "foreground": "tkOrange1"
             }
         },
         {
@@ -208,7 +241,36 @@
                 "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
             ],
             "settings": {
-                "foreground": "tkWhite2"
+                "foreground": "tkYellowGreen2"
+            }
+        },
+        {
+            "name": "objects",
+            "scope": ["variable.other.object"],
+            "settings": {
+                "foreground": "tkTeal2",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "objects properties",
+            "scope": ["variable.other.object.property"],
+            "settings": {
+                "foreground": "tkTurquoise1"
+            }
+        },
+        {
+            "name": "bool: true",
+            "scope": ["constant.language.boolean.true"],
+            "settings": {
+                "foreground": "#7ba04f"
+            }
+        },
+        {
+            "name": "bool: false",
+            "scope": ["constant.language.boolean.false"],
+            "settings": {
+                "foreground": "#c55551"
             }
         },
         {
@@ -272,7 +334,7 @@
             "scope": ["entity.name.method.js"],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#82AAFF"
+                "foreground": "tkOrangeYellow2"
             }
         },
         {
@@ -282,14 +344,14 @@
                 "variable.function.constructor"
             ],
             "settings": {
-                "foreground": "#82AAFF"
+                "foreground": "tkOrangeYellow2"
             }
         },
         {
             "name": "Attributes",
             "scope": ["entity.other.attribute-name"],
             "settings": {
-                "foreground": "#C792EA"
+                "foreground": "tkRedOrange2"
             }
         },
         {
@@ -314,7 +376,7 @@
             "name": "CSS ID's",
             "scope": ["source.sass keyword.control"],
             "settings": {
-                "foreground": "#82AAFF"
+                "foreground": "tkYellow2"
             }
         },
         {
@@ -335,7 +397,7 @@
             "name": "Changed",
             "scope": ["markup.changed"],
             "settings": {
-                "foreground": "#C792EA"
+                "foreground": "tkRedOrange2"
             }
         },
         {
@@ -367,7 +429,7 @@
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#82AAFF"
+                "foreground": "tkYellow2"
             }
         },
         {
@@ -386,7 +448,7 @@
                 "source.json meta.structure.dictionary.json support.type.property-name.json"
             ],
             "settings": {
-                "foreground": "tkTurquoise2"
+                "foreground": "tkTeal2"
             }
         },
         {
@@ -395,7 +457,7 @@
                 "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
             ],
             "settings": {
-                "foreground": "tkOrangeYellow1"
+                "foreground": "tkOrangeYellow2"
             }
         },
         {
@@ -404,7 +466,7 @@
                 "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
             ],
             "settings": {
-                "foreground": "tkTurquoise1"
+                "foreground": "tkTeal1"
             }
         },
         {
@@ -440,7 +502,7 @@
                 "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
             ],
             "settings": {
-                "foreground": "tkTurquoise2"
+                "foreground": "tkTeal2"
             }
         },
         {
@@ -475,7 +537,7 @@
             "name": "Markdown - Markup Raw Inline",
             "scope": ["text.html.markdown markup.inline.raw.markdown"],
             "settings": {
-                "foreground": "#C792EA"
+                "foreground": "tkRedOrange2"
             }
         },
         {
@@ -557,14 +619,14 @@
             "name": "Markdown - Link",
             "scope": ["string.other.link.title.markdown"],
             "settings": {
-                "foreground": "#82AAFF"
+                "foreground": "tkYellow2"
             }
         },
         {
             "name": "Markdown - Link Description",
             "scope": ["string.other.link.description.title.markdown"],
             "settings": {
-                "foreground": "#C792EA"
+                "foreground": "tkRedOrange2"
             }
         },
         {
@@ -578,7 +640,7 @@
             "name": "Markup - Raw Block",
             "scope": ["markup.raw.block"],
             "settings": {
-                "foreground": "#C792EA"
+                "foreground": "tkRedOrange2"
             }
         },
         {
