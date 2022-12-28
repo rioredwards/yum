@@ -180,19 +180,6 @@
             }
         },
         {
-            "name": "Function, Special Method",
-            "scope": [
-                "entity.name.function",
-                "meta.function-call",
-                "variable.function",
-                "support.function",
-                "keyword.other.special-method"
-            ],
-            "settings": {
-                "foreground": "#E79F56"
-            }
-        },
-        {
             "name": "Block Level Variables",
             "scope": ["meta.block variable.other"],
             "settings": {
@@ -244,21 +231,7 @@
                 "foreground": "#6A8759"
             }
         },
-        {
-            "name": "objects",
-            "scope": ["variable.other.object"],
-            "settings": {
-                "foreground": "#53a992",
-                "fontStyle": "bold"
-            }
-        },
-        {
-            "name": "objects properties",
-            "scope": ["variable.other.object.property"],
-            "settings": {
-                "foreground": "#50a5a2"
-            }
-        },
+
         {
             "name": "bool: true",
             "scope": ["constant.language.boolean.true"],
@@ -326,25 +299,39 @@
             "scope": ["variable.language"],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#FF5370"
+                "foreground": "#efefef"
             }
         },
         {
-            "name": "entity.name.method.js",
-            "scope": ["entity.name.method.js"],
+            "name": "objects",
+            "scope": ["variable.other.object"],
             "settings": {
-                "fontStyle": "italic",
-                "foreground": "#E79F56"
+                "foreground": "#53a992",
+                "fontStyle": "bold"
             }
         },
         {
-            "name": "meta.method.js",
+            "name": "objects properties/methods",
             "scope": [
-                "meta.class-method.js entity.name.function.js",
-                "variable.function.constructor"
+                "variable.other.object.property",
+                "meta.class-method.js entity.name.function",
+                "variable.function.constructor",
+                "entity.name.method.js",
+                "entity.name.function",
+                "meta.function-call",
+                "variable.function",
+                "support.function",
+                "keyword.other.special-method"
             ],
             "settings": {
                 "foreground": "#E79F56"
+            }
+        },
+        {
+            "name": "objects keys",
+            "scope": ["meta.object-literal.key"],
+            "settings": {
+                "foreground": "#c5c5c5"
             }
         },
         {
