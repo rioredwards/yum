@@ -8,7 +8,7 @@
         "descriptionForeground": "txtInactive",
         "icon.foreground": "txtDefault",
 
-        "textLink.foreground": "txtLinkInactive",
+        "textLink.foreground": "txtSelected",
         "textLink.activeForeground": "txtLinkActive",
 
         "toolbar.hoverBackground": "highlightInActive1",
@@ -146,14 +146,14 @@
             "name": "punctuation",
             "scope": "punctuation",
             "settings": {
-                "foreground": "tkWhite1"
+                "foreground": "#e0e0e0"
             }
         },
         {
             "name": "string",
             "scope": "string",
             "settings": {
-                "foreground": "tkWhite2"
+                "foreground": "tkYellowGreen1"
             }
         },
         {
@@ -188,7 +188,7 @@
             "name": "Variables",
             "scope": ["variable"],
             "settings": {
-                "foreground": "tkYellow2"
+                "foreground": "#d8af61"
             }
         },
         {
@@ -199,24 +199,70 @@
             }
         },
         {
-            "name": "Variables-property",
-            "scope": ["variable.other.property"],
+            "name": "Objects",
+            "scope": ["variable.other.object"],
             "settings": {
-                "foreground": "tkOrangeYellow2"
+                "foreground": "tkOrangeYellow2",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Object/Variable properties",
+            "scope": [
+                "variable.other.property",
+                "meta.object.member",
+                "meta.object-literal.key"
+            ],
+            "settings": {
+                "foreground": "tkRed1"
+            }
+        },
+        {
+            "name": "storage: declarations (class, function, int, var, ect...)",
+            "scope": ["storage"],
+            "settings": {
+                "foreground": "tkGreen2",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Functions",
+            "scope": [
+                "entity.name.function",
+                "support.function",
+                "support.constant.handlebars"
+            ],
+            "settings": {
+                "foreground": "tkTurquoise1",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "storage modifier (static, final, abstract, async, ect...)",
+            "scope": ["storage.modifier"],
+            "settings": {
+                "foreground": "tkIndigo1"
+            }
+        },
+        {
+            "name": "Keywords",
+            "scope": ["keyword"],
+            "settings": {
+                "foreground": "tkIndigo1"
+            }
+        },
+        {
+            "name": "Operators",
+            "scope": ["keyword.operator"],
+            "settings": {
+                "foreground": "#e0e0e0"
             }
         },
         {
             "name": "entity",
-            "scope": ["entity"],
+            "scope": ["entity.name.selector"],
             "settings": {
-                "foreground": "#949494"
-            }
-        },
-        {
-            "name": "storage",
-            "scope": ["storage"],
-            "settings": {
-                "foreground": "#949494"
+                "foreground": "tkFalse"
             }
         },
         {
@@ -226,20 +272,6 @@
                 "foreground": "#949494"
             }
         },
-        {
-            "name": "keywords",
-            "scope": ["keyword"],
-            "settings": {
-                "foreground": "#949494"
-            }
-        },
-        // {
-        //     "name": "support",
-        //     "scope": ["support"],
-        //     "settings": {
-        //         "foreground": "#949494"
-        //     }
-        // },
         {
             "name": "markup",
             "scope": ["markup"],

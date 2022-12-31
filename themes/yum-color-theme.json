@@ -146,14 +146,14 @@
             "name": "punctuation",
             "scope": "punctuation",
             "settings": {
-                "foreground": "#efefef"
+                "foreground": "#e0e0e0"
             }
         },
         {
             "name": "string",
             "scope": "string",
             "settings": {
-                "foreground": "#c5c5c5"
+                "foreground": "#9bb572"
             }
         },
         {
@@ -188,7 +188,7 @@
             "name": "Variables",
             "scope": ["variable"],
             "settings": {
-                "foreground": "#d4ae4e"
+                "foreground": "#d8af61"
             }
         },
         {
@@ -199,24 +199,70 @@
             }
         },
         {
-            "name": "Variables-property",
-            "scope": ["variable.other.property"],
+            "name": "Objects",
+            "scope": ["variable.other.object"],
             "settings": {
-                "foreground": "#E79F56"
+                "foreground": "#E79F56",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Object/Variable properties",
+            "scope": [
+                "variable.other.property",
+                "meta.object.member",
+                "meta.object-literal.key"
+            ],
+            "settings": {
+                "foreground": "#F07178"
+            }
+        },
+        {
+            "name": "storage: declarations (class, function, int, var, ect...)",
+            "scope": ["storage"],
+            "settings": {
+                "foreground": "#509151",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Functions",
+            "scope": [
+                "entity.name.function",
+                "support.function",
+                "support.constant.handlebars"
+            ],
+            "settings": {
+                "foreground": "#50a5a2",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "storage modifier (static, final, abstract, async, ect...)",
+            "scope": ["storage.modifier"],
+            "settings": {
+                "foreground": "#7485d0"
+            }
+        },
+        {
+            "name": "Keywords",
+            "scope": ["keyword"],
+            "settings": {
+                "foreground": "#7485d0"
+            }
+        },
+        {
+            "name": "Operators",
+            "scope": ["keyword.operator"],
+            "settings": {
+                "foreground": "#e0e0e0"
             }
         },
         {
             "name": "entity",
-            "scope": ["entity"],
+            "scope": ["entity.name.selector"],
             "settings": {
-                "foreground": "#949494"
-            }
-        },
-        {
-            "name": "storage",
-            "scope": ["storage"],
-            "settings": {
-                "foreground": "#949494"
+                "foreground": "#d33223"
             }
         },
         {
@@ -226,20 +272,6 @@
                 "foreground": "#949494"
             }
         },
-        {
-            "name": "keywords",
-            "scope": ["keyword"],
-            "settings": {
-                "foreground": "#949494"
-            }
-        },
-        // {
-        //     "name": "support",
-        //     "scope": ["support"],
-        //     "settings": {
-        //         "foreground": "#949494"
-        //     }
-        // },
         {
             "name": "markup",
             "scope": ["markup"],
