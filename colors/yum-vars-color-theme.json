@@ -276,14 +276,7 @@
             "name": "meta",
             "scope": ["meta"],
             "settings": {
-                "foreground": "#949494"
-            }
-        },
-        {
-            "name": "markup",
-            "scope": ["markup"],
-            "settings": {
-                "foreground": "#949494"
+                "foreground": "tkWhite2"
             }
         },
         // JAVASCRIPT ----------------------------------------
@@ -443,6 +436,89 @@
             ],
             "settings": {
                 "foreground": "tkRedOrange1"
+            }
+        },
+        // MARKDOWN/MARKUP ----------------------------------------
+        {
+            "name": "markup",
+            "scope": ["markup"],
+            "settings": {
+                "foreground": "tkWhite2"
+            }
+        },
+        {
+            "scope": "markup.underline",
+            "settings": {
+                "fontStyle": "underline"
+            }
+        },
+        {
+            "scope": "string.other.link.title.markdown",
+            "settings": {
+                "foreground": "tkWhite1",
+                "fontStyle": "underline"
+            }
+        },
+        {
+            "scope": "markup.underline.link",
+            "settings": {
+                "foreground": "tkViolet1"
+            }
+        },
+        {
+            "scope": "markup.bold",
+            "settings": {
+                "fontStyle": "bold",
+                "foreground": "tkRedOrange2"
+            }
+        },
+        {
+            "scope": "markup.heading",
+            "settings": {
+                "fontStyle": "bold",
+                "foreground": "tkOrangeYellow2"
+            }
+        },
+        {
+            "scope": "markup.italic",
+            "settings": {
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope": "markup.inserted",
+            "settings": {
+                "foreground": "tkGreen1"
+            }
+        },
+        {
+            "scope": "markup.deleted",
+            "settings": {
+                "foreground": "tkRed1"
+            }
+        },
+        {
+            "scope": "markup.changed",
+            "settings": {
+                "foreground": "tkRedOrange2"
+            }
+        },
+        {
+            "scope": "markup.punctuation.quote.beginning",
+            "settings": {
+                "foreground": "tkBabyBlue1"
+            }
+        },
+        {
+            "scope": "markup.punctuation.list.beginning",
+            "settings": {
+                "foreground": "tkBabyBlue1"
+            }
+        },
+        {
+            "scope": ["markup.inline.raw", "markup.fenced_code.block"],
+            "settings": {
+                "foreground": "tkTeal2"
             }
         }
     ]
