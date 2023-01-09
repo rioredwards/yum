@@ -188,7 +188,7 @@
             "name": "Variables",
             "scope": ["variable"],
             "settings": {
-                "foreground": "#d8af61"
+                "foreground": "tkOrangeYellow2"
             }
         },
         {

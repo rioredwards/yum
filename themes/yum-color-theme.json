@@ -92,7 +92,7 @@
             "scope": ["comment", "punctuation.definition.comment"],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#777777"
+                "foreground": "#8c8c8c"
             }
         },
         {
@@ -153,7 +153,7 @@
             "name": "string",
             "scope": "string",
             "settings": {
-                "foreground": "#c5c5c5"
+                "foreground": "#c8c8c8"
             }
         },
         {
@@ -188,21 +188,21 @@
             "name": "Variables",
             "scope": ["variable"],
             "settings": {
-                "foreground": "#d8af61"
+                "foreground": "#c58a4f"
             }
         },
         {
             "name": "Variables-readwrite",
             "scope": ["variable.other.readwrite"],
             "settings": {
-                "foreground": "#E79F56"
+                "foreground": "#c58a4f"
             }
         },
         {
             "name": "Objects",
             "scope": ["variable.other.object"],
             "settings": {
-                "foreground": "#E79F56",
+                "foreground": "#c58a4f",
                 "fontStyle": "bold"
             }
         },
@@ -321,7 +321,7 @@
             "name": "HTML attribute",
             "scope": ["entity.other.attribute-name.html"],
             "settings": {
-                "foreground": "#E79F56"
+                "foreground": "#c58a4f"
             }
         },
         // CSS ----------------------------------------
@@ -335,7 +335,7 @@
                 "entity.other.attribute-name.id.css"
             ],
             "settings": {
-                "foreground": "#E79F56"
+                "foreground": "#c58a4f"
             }
         },
         {
@@ -371,7 +371,7 @@
                 "meta.property-value.css"
             ],
             "settings": {
-                "foreground": "#c5c5c5"
+                "foreground": "#c8c8c8"
             }
         },
         {
@@ -400,7 +400,7 @@
         {
             "scope": "string.quoted.double.json",
             "settings": {
-                "foreground": "#c5c5c5"
+                "foreground": "#c8c8c8"
             }
         },
         {
@@ -421,7 +421,7 @@
                 "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
             ],
             "settings": {
-                "foreground": "#E79F56"
+                "foreground": "#c58a4f"
             }
         },
         {
