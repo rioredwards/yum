@@ -290,13 +290,13 @@
         {
             "scope": "support.class.component.js",
             "settings": {
-                "foreground": "tkTurquoise1"
+                "foreground": "tkRedOrange2"
             }
         },
         {
             "scope": "entity.other.attribute-name.js",
             "settings": {
-                "foreground": "tkRedOrange1"
+                "foreground": "tkOrangeYellow2"
             }
         },
         // HTML ----------------------------------------

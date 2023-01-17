@@ -290,13 +290,13 @@
         {
             "scope": "support.class.component.js",
             "settings": {
-                "foreground": "#6ec5c2"
+                "foreground": "#CF6A4C"
             }
         },
         {
             "scope": "entity.other.attribute-name.js",
             "settings": {
-                "foreground": "#d67c6e"
+                "foreground": "#E79F56"
             }
         },
         // HTML ----------------------------------------
