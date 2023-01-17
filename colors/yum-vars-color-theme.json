@@ -286,6 +286,19 @@
                 "foreground": "tkGreen2"
             }
         },
+        // REACT.JS ----------------------------------------
+        {
+            "scope": "support.class.component.js",
+            "settings": {
+                "foreground": "tkTurquoise1"
+            }
+        },
+        {
+            "scope": "entity.other.attribute-name.js",
+            "settings": {
+                "foreground": "tkRedOrange1"
+            }
+        },
         // HTML ----------------------------------------
         {
             "scope": "string.quoted.double.html",
