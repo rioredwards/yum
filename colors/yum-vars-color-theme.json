@@ -297,28 +297,28 @@
       "name": "Typescript: Basic Types",
       "scope": ["support.type.primitive.ts"],
       "settings": {
-        "foreground": "tkTrue"
+        "foreground": "tkBlue1"
       }
     },
     {
       "name": "Typescript: Built-in Types",
       "scope": ["support.type.builtin.ts"],
       "settings": {
-        "foreground": "tkTrue"
+        "foreground": "tkBlue1"
       }
     },
     {
       "name": "Typescript: User-Defined Types + Type Aliases",
       "scope": ["entity.name.type.ts", "entity.name.type.alias.ts"],
       "settings": {
-        "foreground": "tkTrue"
+        "foreground": "tkBabyBlue1"
       }
     },
     {
       "name": "Typescript: Interfaces",
       "scope": ["entity.name.type.interface.ts"],
       "settings": {
-        "foreground": "tkTrue"
+        "foreground": "tkTurquoise2"
       }
     },
     {
@@ -329,7 +329,7 @@
         "support.class.ts"
       ],
       "settings": {
-        "foreground": "tkTrue"
+        "foreground": "tkTurquoise1"
       }
     },
     {
@@ -343,7 +343,7 @@
       "name": "Typescript: Delete",
       "scope": ["keyword.operator.expression.delete.ts"],
       "settings": {
-        "foreground": "tkTrue"
+        "foreground": "tkFalse"
       }
     },
     {
@@ -354,7 +354,7 @@
         "keyword.operator.expression.in.ts"
       ],
       "settings": {
-        "foreground": "tkFalse"
+        "foreground": "tkViolet1"
       }
     },
     // REACT.JS ----------------------------------------

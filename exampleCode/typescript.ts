@@ -203,8 +203,6 @@ interface Rectangle {
   height: number;
 }
 
-delete Circle;
-
 type Shape = Square | Rectangle;
 
 // Type Guards

@@ -104,7 +104,7 @@
         "meta.function.color"
       ],
       "settings": {
-        "foreground": "#6ec5c2"
+        "foreground": "#65bcb9"
       }
     },
     {
@@ -239,7 +239,7 @@
         "support.constant.handlebars"
       ],
       "settings": {
-        "foreground": "#6ec5c2",
+        "foreground": "#65bcb9",
         "fontStyle": "bold"
       }
     },
@@ -297,28 +297,28 @@
       "name": "Typescript: Basic Types",
       "scope": ["support.type.primitive.ts"],
       "settings": {
-        "foreground": "#34b73c"
+        "foreground": "#6698c9"
       }
     },
     {
       "name": "Typescript: Built-in Types",
       "scope": ["support.type.builtin.ts"],
       "settings": {
-        "foreground": "#34b73c"
+        "foreground": "#6698c9"
       }
     },
     {
       "name": "Typescript: User-Defined Types + Type Aliases",
       "scope": ["entity.name.type.ts", "entity.name.type.alias.ts"],
       "settings": {
-        "foreground": "#34b73c"
+        "foreground": "#7bc4df"
       }
     },
     {
       "name": "Typescript: Interfaces",
       "scope": ["entity.name.type.interface.ts"],
       "settings": {
-        "foreground": "#34b73c"
+        "foreground": "#4c9ea6"
       }
     },
     {
@@ -329,7 +329,7 @@
         "support.class.ts"
       ],
       "settings": {
-        "foreground": "#34b73c"
+        "foreground": "#65bcb9"
       }
     },
     {
@@ -343,7 +343,7 @@
       "name": "Typescript: Delete",
       "scope": ["keyword.operator.expression.delete.ts"],
       "settings": {
-        "foreground": "#34b73c"
+        "foreground": "#d33223"
       }
     },
     {
@@ -354,7 +354,7 @@
         "keyword.operator.expression.in.ts"
       ],
       "settings": {
-        "foreground": "#d33223"
+        "foreground": "#bd92ea"
       }
     },
     // REACT.JS ----------------------------------------
@@ -428,7 +428,7 @@
         "support.type.vendored.property-name.css"
       ],
       "settings": {
-        "foreground": "#6ec5c2"
+        "foreground": "#65bcb9"
       }
     },
     {
