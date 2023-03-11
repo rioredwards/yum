@@ -26,6 +26,15 @@
     "editorHoverWidget.foreground": "txtDefault",
     "editorStickyScroll.background": "bgDark2",
 
+    "editorBracketMatch.border": "tkBracketHighlight1",
+    "editorBracketHighlight.foreground1": "tkBracketColor1",
+    "editorBracketHighlight.foreground2": "tkBracketColor2",
+    "editorBracketHighlight.foreground3": "tkBracketColor3",
+    "editorBracketHighlight.foreground4": "tkBracketColor4",
+    "editorBracketHighlight.foreground5": "tkBracketColor5",
+    "editorBracketHighlight.foreground6": "tkBracketColor6",
+    "editorBracketHighlight.unexpectedBracket.foreground": "tkFalse",
+
     "activityBar.background": "bgLight2",
     "activityBar.foreground": "txtSelected",
     "activityBar.activeBackground": "bgLight3",

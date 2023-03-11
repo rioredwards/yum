@@ -26,6 +26,15 @@
     "editorHoverWidget.foreground": "#cccccc",
     "editorStickyScroll.background": "#272727",
 
+    "editorBracketMatch.border": "#35dfd48a",
+    "editorBracketHighlight.foreground1": "#dd7bca",
+    "editorBracketHighlight.foreground2": "#77b168",
+    "editorBracketHighlight.foreground3": "#5d89d1",
+    "editorBracketHighlight.foreground4": "#dd7bca",
+    "editorBracketHighlight.foreground5": "#77b168",
+    "editorBracketHighlight.foreground6": "#5d89d1",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#d33223",
+
     "activityBar.background": "#3a3a3a",
     "activityBar.foreground": "#3da2d1",
     "activityBar.activeBackground": "#474747",

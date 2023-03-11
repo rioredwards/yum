@@ -57,5 +57,13 @@
 
   "tkTrue": "#34b73c",
   "tkFalse": "#d33223",
-  "tkUndefined": "#e26868"
+  "tkUndefined": "#e26868",
+
+  "tkBracketHighlight1": "#35dfd48a",
+  "tkBracketColor1": "#dd7bca",
+  "tkBracketColor2": "#77b168",
+  "tkBracketColor3": "#5d89d1",
+  "tkBracketColor4": "#dd7bca",
+  "tkBracketColor5": "#77b168",
+  "tkBracketColor6": "#5d89d1"
 }
