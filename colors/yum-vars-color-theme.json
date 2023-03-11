@@ -360,7 +360,8 @@
       "scope": [
         "keyword.operator.expression.instanceof.ts",
         "keyword.operator.expression.typeof.ts",
-        "keyword.operator.expression.in.ts"
+        "keyword.operator.expression.in.ts",
+        "keyword.operator.expression.keyof.ts"
       ],
       "settings": {
         "foreground": "tkViolet1"
