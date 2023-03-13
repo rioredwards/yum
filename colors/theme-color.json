@@ -43,8 +43,8 @@
   "tkGreen2": "#509151",
   "tkTeal1": "#86D3BB",
   "tkTeal2": "#53a992",
-  "tkTurquoise1": "#65bcb9",
-  "tkTurquoise2": "#4c9ea6",
+  "tkTurquoise1": "#6bc1be",
+  "tkTurquoise2": "#69afb6",
   "tkBabyBlue1": "#7bc4df",
   "tkBlue1": "#6698c9",
   "tkBlue2": "#4373a3",
@@ -61,9 +61,9 @@
 
   "tkBracketHighlight1": "#35dfd48a",
   "tkBracketColor1": "#dd7bca",
-  "tkBracketColor2": "#77b168",
-  "tkBracketColor3": "#5d89d1",
-  "tkBracketColor4": "#dd7bca",
-  "tkBracketColor5": "#77b168",
-  "tkBracketColor6": "#5d89d1"
+  "tkBracketColor2": "#e1b657",
+  "tkBracketColor3": "#40b0ac",
+  "tkBracketColor4": "#6db05d",
+  "tkBracketColor5": "#da874b",
+  "tkBracketColor6": "#3171d7"
 }

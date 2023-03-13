@@ -28,11 +28,11 @@
 
     "editorBracketMatch.border": "#35dfd48a",
     "editorBracketHighlight.foreground1": "#dd7bca",
-    "editorBracketHighlight.foreground2": "#77b168",
-    "editorBracketHighlight.foreground3": "#5d89d1",
-    "editorBracketHighlight.foreground4": "#dd7bca",
-    "editorBracketHighlight.foreground5": "#77b168",
-    "editorBracketHighlight.foreground6": "#5d89d1",
+    "editorBracketHighlight.foreground2": "#e1b657",
+    "editorBracketHighlight.foreground3": "#40b0ac",
+    "editorBracketHighlight.foreground4": "#6db05d",
+    "editorBracketHighlight.foreground5": "#da874b",
+    "editorBracketHighlight.foreground6": "#3171d7",
     "editorBracketHighlight.unexpectedBracket.foreground": "#d33223",
 
     "activityBar.background": "#3a3a3a",
@@ -113,7 +113,7 @@
         "meta.function.color"
       ],
       "settings": {
-        "foreground": "#65bcb9"
+        "foreground": "#6bc1be"
       }
     },
     {
@@ -248,7 +248,7 @@
         "support.constant.handlebars"
       ],
       "settings": {
-        "foreground": "#65bcb9",
+        "foreground": "#6bc1be",
         "fontStyle": "bold"
       }
     },
@@ -327,7 +327,7 @@
       "name": "Typescript: Interfaces",
       "scope": ["entity.name.type.interface.ts"],
       "settings": {
-        "foreground": "#4c9ea6"
+        "foreground": "#69afb6"
       }
     },
     {
@@ -338,7 +338,7 @@
         "support.class.ts"
       ],
       "settings": {
-        "foreground": "#65bcb9"
+        "foreground": "#6bc1be"
       }
     },
     {
@@ -438,7 +438,7 @@
         "support.type.vendored.property-name.css"
       ],
       "settings": {
-        "foreground": "#65bcb9"
+        "foreground": "#6bc1be"
       }
     },
     {
