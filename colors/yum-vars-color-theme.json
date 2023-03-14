@@ -324,8 +324,8 @@
       }
     },
     {
-      "name": "Typescript: Interfaces",
-      "scope": ["entity.name.type.interface.ts"],
+      "name": "Typescript: Interfaces, Enums",
+      "scope": ["entity.name.type.interface.ts", "entity.name.type.enum.ts"],
       "settings": {
         "foreground": "tkTurquoise2"
       }

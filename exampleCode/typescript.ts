@@ -71,6 +71,11 @@ let myAdd = function (x: number, y: number): number {
   return x + y;
 };
 
+enum Color {
+  Red,
+  Green,
+}
+
 // Optional and Default Parameters
 function buildName(firstName: string, lastName = "Smith") {
   return firstName + " " + lastName;
