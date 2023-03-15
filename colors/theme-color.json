@@ -67,7 +67,10 @@
   "tkBracketColor5": "#ee985b",
   "tkBracketColor6": "#588ee4",
 
-  "terminalBlack": "#282828",
+  "terminalText": "#ecdbb2",
+  "terminalHighlight": "#ecdab2b9",
+  "terminalBG": "#252525",
+  "terminalBlack": "#353535",
   "terminalRed": "#cc241d",
   "terminalGreen": "#98971a",
   "terminalYellow": "#d79921",
