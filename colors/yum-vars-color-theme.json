@@ -92,7 +92,30 @@
     "quickInput.foreground": "txtDefault",
 
     "panel.background": "bgDark1",
-    "panelTitle.activeForeground": "txtDefault"
+    "panelTitle.activeForeground": "txtDefault",
+
+    "terminal.foreground": "txtDefault",
+    "terminal.background": "bgLight1",
+    "terminalCursor.background": "bgDark2",
+    "terminalCursor.foreground": "txtDefault",
+    "terminal.selectionBackground": "highlightActive2",
+    "terminal.border": "bgDark1",
+    "terminal.ansiBlack": "terminalBlack",
+    "terminal.ansiRed": "terminalRed",
+    "terminal.ansiGreen": "terminalGreen",
+    "terminal.ansiYellow": "terminalYellow",
+    "terminal.ansiBlue": "terminalBlue",
+    "terminal.ansiMagenta": "terminalMagenta",
+    "terminal.ansiCyan": "terminalCyan",
+    "terminal.ansiWhite": "terminalWhite",
+    "terminal.ansiBrightBlack": "terminalBrightBlack",
+    "terminal.ansiBrightRed": "terminalBrightRed",
+    "terminal.ansiBrightGreen": "terminalBrightGreen",
+    "terminal.ansiBrightYellow": "terminalBrightYellow",
+    "terminal.ansiBrightBlue": "terminalBrightBlue",
+    "terminal.ansiBrightMagenta": "terminalBrightMagenta",
+    "terminal.ansiBrightCyan": "terminalBrightCyan",
+    "terminal.ansiBrightWhite": "terminalBrightWhite"
   },
   "tokenColors": [
     /* General */
