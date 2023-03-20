@@ -265,11 +265,7 @@
     },
     {
       "name": "Functions",
-      "scope": [
-        "entity.name.function",
-        "support.function",
-        "support.constant.handlebars"
-      ],
+      "scope": ["entity.name.function", "support.function", "support.constant.handlebars"],
       "settings": {
         "foreground": "#6bc1be",
         "fontStyle": "bold"
@@ -355,13 +351,23 @@
     },
     {
       "name": "Typescript: Classes",
-      "scope": [
-        "entity.name.type.class.ts",
-        "entity.other.inherited-class.ts",
-        "support.class.ts"
-      ],
+      "scope": ["entity.name.type.class.ts", "entity.other.inherited-class.ts", "support.class.ts"],
       "settings": {
         "foreground": "#6bc1be"
+      }
+    },
+    {
+      "name": "Typescript: Module",
+      "scope": ["entity.name.type.module.ts"],
+      "settings": {
+        "foreground": "#CF6A4C"
+      }
+    },
+    {
+      "name": "Typescript: Directives",
+      "scope": ["entity.name.tag.directive.ts", "entity.other.attribute-name.directive.ts"],
+      "settings": {
+        "foreground": "#a067c6"
       }
     },
     {
@@ -390,23 +396,33 @@
         "foreground": "#bd92ea"
       }
     },
-    // REACT.JS ----------------------------------------
+    // REACT ----------------------------------------
     {
-      "scope": "entity.name.tag.js",
+      "name": "Tag",
+      "scope": ["entity.name.tag.js", "entity.name.tag.tsx"],
       "settings": {
         "foreground": "#CF6A4C"
       }
     },
     {
-      "scope": "support.class.component.js",
+      "name": "Component",
+      "scope": ["support.class.component.js", "support.class.component.tsx"],
       "settings": {
         "foreground": "#F07178"
       }
     },
     {
-      "scope": "entity.other.attribute-name.js",
+      "name": "Attribute",
+      "scope": ["entity.other.attribute-name.js", "entity.other.attribute-name.tsx"],
       "settings": {
         "foreground": "#E79F56"
+      }
+    },
+    {
+      "name": "Inner-Text",
+      "scope": ["meta.jsx.children.js", "meta.jsx.children.js.jsx"],
+      "settings": {
+        "foreground": "#cccccc"
       }
     },
     // HTML ----------------------------------------
@@ -425,10 +441,7 @@
     },
     {
       "name": "HTML punctuation",
-      "scope": [
-        "punctuation.definition.tag.begin.html",
-        "punctuation.definition.tag.end.html"
-      ],
+      "scope": ["punctuation.definition.tag.begin.html", "punctuation.definition.tag.end.html"],
       "settings": {
         "foreground": "#53a992"
       }
@@ -456,10 +469,7 @@
     },
     {
       "name": "CSS properties",
-      "scope": [
-        "support.type.property-name.css",
-        "support.type.vendored.property-name.css"
-      ],
+      "scope": ["support.type.property-name.css", "support.type.vendored.property-name.css"],
       "settings": {
         "foreground": "#6bc1be"
       }
