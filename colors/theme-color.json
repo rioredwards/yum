@@ -65,5 +65,27 @@
   "tkBracketColor3": "#40b0ac",
   "tkBracketColor4": "#6db05d",
   "tkBracketColor5": "#ee985b",
-  "tkBracketColor6": "#588ee4"
+  "tkBracketColor6": "#588ee4",
+
+  "terminalText": "#ecdbb2",
+  "terminalHighlight": "#ecdab2b9",
+  "terminalBG": "#252525",
+  "terminalBlack": "#353535",
+  "terminalRed": "#cc241d",
+  "terminalGreen": "#98971a",
+  "terminalYellow": "#d79921",
+  "terminalBlue": "#458588",
+  "terminalMagenta": "#b16286",
+  "terminalCyan": "#689d6a",
+  "terminalWhite": "#a89984",
+  "terminalBrightBlack": "#928374",
+  "terminalBrightRed": "#fb4934",
+  "terminalBrightGreen": "#b8bb26",
+  "terminalBrightYellow": "#fabd2f",
+  "terminalBrightBlue": "#83a598",
+  "terminalBrightMagenta": "#d3869b",
+  "terminalBrightCyan": "#8ec07c",
+  "terminalBrightWhite": "#ebdbb2",
+
+  "Test-color": "#a280ec"
 }

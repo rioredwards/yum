@@ -71,6 +71,11 @@ let myAdd = function (x: number, y: number): number {
   return x + y;
 };
 
+enum Color {
+  Red,
+  Green,
+}
+
 // Optional and Default Parameters
 function buildName(firstName: string, lastName = "Smith") {
   return firstName + " " + lastName;
@@ -253,10 +258,7 @@ class Activatable {
 
 class SmartObject implements Disposable, Activatable {
   constructor() {
-    setInterval(
-      () => console.log(this.isActive + " : " + this.isDisposed),
-      500
-    );
+    setInterval(() => console.log(this.isActive + " : " + this.isDisposed), 500);
   }
 
   interact() {
@@ -278,8 +280,7 @@ function applyMixins(derivedCtor: any, baseCtors: any[]) {
       Object.defineProperty(
         derivedCtor.prototype,
         name,
-        Object.getOwnPropertyDescriptor(baseCtor.prototype, name) ||
-          Object.create(null)
+        Object.getOwnPropertyDescriptor(baseCtor.prototype, name) || Object.create(null)
       );
     });
   });
@@ -287,13 +288,9 @@ function applyMixins(derivedCtor: any, baseCtors: any[]) {
 
 /* Type casting */
 
-const paragraphElement = <HTMLParagraphElement>(
-  document.getElementById("paragraph")
-);
+const paragraphElement = <HTMLParagraphElement>document.getElementById("paragraph");
 
-const userInputElement = document.getElementById(
-  "user-input"
-)! as HTMLInputElement;
+const userInputElement = document.getElementById("user-input")! as HTMLInputElement;
 
 userInputElement.value = "Hi there!";
 
@@ -415,3 +412,6 @@ const stringResult = add7("Rio", "Edwards");
 
 numResult.toFixed(2);
 stringResult.split(" ");
+
+/// <reference types="@types/google.maps" />
+let map: google.maps.Map;

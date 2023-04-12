@@ -92,7 +92,30 @@
     "quickInput.foreground": "#cccccc",
 
     "panel.background": "#212121",
-    "panelTitle.activeForeground": "#cccccc"
+    "panelTitle.activeForeground": "#cccccc",
+
+    "terminal.foreground": "#ecdbb2",
+    "terminal.background": "#252525",
+    "terminalCursor.background": "#272727",
+    "terminalCursor.foreground": "#ecdbb2",
+    "terminal.selectionBackground": "#ecdab2b9",
+    "terminal.border": "#212121",
+    "terminal.ansiBlack": "#353535",
+    "terminal.ansiRed": "#cc241d",
+    "terminal.ansiGreen": "#98971a",
+    "terminal.ansiYellow": "#d79921",
+    "terminal.ansiBlue": "#458588",
+    "terminal.ansiMagenta": "#b16286",
+    "terminal.ansiCyan": "#689d6a",
+    "terminal.ansiWhite": "#a89984",
+    "terminal.ansiBrightBlack": "#928374",
+    "terminal.ansiBrightRed": "#fb4934",
+    "terminal.ansiBrightGreen": "#b8bb26",
+    "terminal.ansiBrightYellow": "#fabd2f",
+    "terminal.ansiBrightBlue": "#83a598",
+    "terminal.ansiBrightMagenta": "#d3869b",
+    "terminal.ansiBrightCyan": "#8ec07c",
+    "terminal.ansiBrightWhite": "#ebdbb2"
   },
   "tokenColors": [
     /* General */
@@ -304,28 +327,39 @@
     // TYPESCRIPT ----------------------------------------
     {
       "name": "Typescript: Basic Types",
-      "scope": ["support.type.primitive.ts"],
+      "scope": ["support.type.primitive.ts", "support.type.primitive.tsx"],
       "settings": {
         "foreground": "#6698c9"
       }
     },
     {
       "name": "Typescript: Built-in Types",
-      "scope": ["support.type.builtin.ts"],
+      "scope": ["support.type.builtin.ts", "support.type.builtin.tsx"],
       "settings": {
         "foreground": "#6698c9"
       }
     },
     {
       "name": "Typescript: User-Defined Types + Type Aliases",
-      "scope": ["entity.name.type.ts", "entity.name.type.alias.ts"],
+      "scope": [
+        "entity.name.type.ts",
+        "entity.name.type.tsx",
+        "entity.name.type.alias.ts",
+        "entity.name.type.alias.tsx",
+        "entity.name.type.module.tsx"
+      ],
       "settings": {
         "foreground": "#7bc4df"
       }
     },
     {
-      "name": "Typescript: Interfaces",
-      "scope": ["entity.name.type.interface.ts"],
+      "name": "Typescript: Interfaces, Enums",
+      "scope": [
+        "entity.name.type.interface.ts",
+        "entity.name.type.interface.tsx",
+        "entity.name.type.enum.ts",
+        "entity.name.type.enum.tsx"
+      ],
       "settings": {
         "foreground": "#69afb6"
       }
@@ -339,6 +373,23 @@
       ],
       "settings": {
         "foreground": "#6bc1be"
+      }
+    },
+    {
+      "name": "Typescript: Module",
+      "scope": ["entity.name.type.module.ts"],
+      "settings": {
+        "foreground": "#CF6A4C"
+      }
+    },
+    {
+      "name": "Typescript: Directives",
+      "scope": [
+        "entity.name.tag.directive.ts",
+        "entity.other.attribute-name.directive.ts"
+      ],
+      "settings": {
+        "foreground": "#a067c6"
       }
     },
     {
@@ -367,23 +418,43 @@
         "foreground": "#bd92ea"
       }
     },
-    // REACT.JS ----------------------------------------
+    // REACT ----------------------------------------
     {
-      "scope": "entity.name.tag.js",
+      "name": "Tag",
+      "scope": ["entity.name.tag.js", "entity.name.tag.tsx"],
       "settings": {
         "foreground": "#CF6A4C"
       }
     },
     {
-      "scope": "support.class.component.js",
+      "name": "Component",
+      "scope": ["support.class.component.js", "support.class.component.tsx"],
       "settings": {
         "foreground": "#F07178"
       }
     },
     {
-      "scope": "entity.other.attribute-name.js",
+      "name": "Attribute",
+      "scope": [
+        "entity.other.attribute-name.js",
+        "entity.other.attribute-name.tsx"
+      ],
       "settings": {
         "foreground": "#E79F56"
+      }
+    },
+    {
+      "name": "Inner-Text",
+      "scope": ["meta.jsx.children.js", "meta.jsx.children.js.jsx"],
+      "settings": {
+        "foreground": "#cccccc"
+      }
+    },
+    {
+      "name": "Types",
+      "scope": ["entity.name.type.tsx", "entity.name.type.interface.tsx"],
+      "settings": {
+        "foreground": "#6698c9"
       }
     },
     // HTML ----------------------------------------
@@ -419,7 +490,7 @@
     },
     // CSS ----------------------------------------
     {
-      "name": "CSS Selector",
+      "name": "CSS Selector name",
       "scope": [
         "entity.name.tag.css",
         "entity.other.attribute-name.css",
@@ -429,6 +500,23 @@
       ],
       "settings": {
         "foreground": "#E79F56"
+      }
+    },
+    {
+      "name": "CSS Selector punctuation",
+      "scope": ["punctuation.definition.entity.css"],
+      "settings": {
+        "foreground": "#cccccc"
+      }
+    },
+    {
+      "name": "CSS Selector Special",
+      "scope": [
+        "entity.name.tag.wildcard.css",
+        "entity.other.attribute-name.pseudo-element.css"
+      ],
+      "settings": {
+        "foreground": "#F07178"
       }
     },
     {

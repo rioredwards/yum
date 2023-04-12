@@ -92,7 +92,30 @@
     "quickInput.foreground": "txtDefault",
 
     "panel.background": "bgDark1",
-    "panelTitle.activeForeground": "txtDefault"
+    "panelTitle.activeForeground": "txtDefault",
+
+    "terminal.foreground": "terminalText",
+    "terminal.background": "terminalBG",
+    "terminalCursor.background": "bgDark2",
+    "terminalCursor.foreground": "terminalText",
+    "terminal.selectionBackground": "terminalHighlight",
+    "terminal.border": "bgDark1",
+    "terminal.ansiBlack": "terminalBlack",
+    "terminal.ansiRed": "terminalRed",
+    "terminal.ansiGreen": "terminalGreen",
+    "terminal.ansiYellow": "terminalYellow",
+    "terminal.ansiBlue": "terminalBlue",
+    "terminal.ansiMagenta": "terminalMagenta",
+    "terminal.ansiCyan": "terminalCyan",
+    "terminal.ansiWhite": "terminalWhite",
+    "terminal.ansiBrightBlack": "terminalBrightBlack",
+    "terminal.ansiBrightRed": "terminalBrightRed",
+    "terminal.ansiBrightGreen": "terminalBrightGreen",
+    "terminal.ansiBrightYellow": "terminalBrightYellow",
+    "terminal.ansiBrightBlue": "terminalBrightBlue",
+    "terminal.ansiBrightMagenta": "terminalBrightMagenta",
+    "terminal.ansiBrightCyan": "terminalBrightCyan",
+    "terminal.ansiBrightWhite": "terminalBrightWhite"
   },
   "tokenColors": [
     /* General */
@@ -304,28 +327,39 @@
     // TYPESCRIPT ----------------------------------------
     {
       "name": "Typescript: Basic Types",
-      "scope": ["support.type.primitive.ts"],
+      "scope": ["support.type.primitive.ts", "support.type.primitive.tsx"],
       "settings": {
         "foreground": "tkBlue1"
       }
     },
     {
       "name": "Typescript: Built-in Types",
-      "scope": ["support.type.builtin.ts"],
+      "scope": ["support.type.builtin.ts", "support.type.builtin.tsx"],
       "settings": {
         "foreground": "tkBlue1"
       }
     },
     {
       "name": "Typescript: User-Defined Types + Type Aliases",
-      "scope": ["entity.name.type.ts", "entity.name.type.alias.ts"],
+      "scope": [
+        "entity.name.type.ts",
+        "entity.name.type.tsx",
+        "entity.name.type.alias.ts",
+        "entity.name.type.alias.tsx",
+        "entity.name.type.module.tsx"
+      ],
       "settings": {
         "foreground": "tkBabyBlue1"
       }
     },
     {
-      "name": "Typescript: Interfaces",
-      "scope": ["entity.name.type.interface.ts"],
+      "name": "Typescript: Interfaces, Enums",
+      "scope": [
+        "entity.name.type.interface.ts",
+        "entity.name.type.interface.tsx",
+        "entity.name.type.enum.ts",
+        "entity.name.type.enum.tsx"
+      ],
       "settings": {
         "foreground": "tkTurquoise2"
       }
@@ -339,6 +373,23 @@
       ],
       "settings": {
         "foreground": "tkTurquoise1"
+      }
+    },
+    {
+      "name": "Typescript: Module",
+      "scope": ["entity.name.type.module.ts"],
+      "settings": {
+        "foreground": "tkRedOrange2"
+      }
+    },
+    {
+      "name": "Typescript: Directives",
+      "scope": [
+        "entity.name.tag.directive.ts",
+        "entity.other.attribute-name.directive.ts"
+      ],
+      "settings": {
+        "foreground": "tkViolet2"
       }
     },
     {
@@ -367,23 +418,43 @@
         "foreground": "tkViolet1"
       }
     },
-    // REACT.JS ----------------------------------------
+    // REACT ----------------------------------------
     {
-      "scope": "entity.name.tag.js",
+      "name": "Tag",
+      "scope": ["entity.name.tag.js", "entity.name.tag.tsx"],
       "settings": {
         "foreground": "tkRedOrange2"
       }
     },
     {
-      "scope": "support.class.component.js",
+      "name": "Component",
+      "scope": ["support.class.component.js", "support.class.component.tsx"],
       "settings": {
         "foreground": "tkRed1"
       }
     },
     {
-      "scope": "entity.other.attribute-name.js",
+      "name": "Attribute",
+      "scope": [
+        "entity.other.attribute-name.js",
+        "entity.other.attribute-name.tsx"
+      ],
       "settings": {
         "foreground": "tkOrangeYellow2"
+      }
+    },
+    {
+      "name": "Inner-Text",
+      "scope": ["meta.jsx.children.js", "meta.jsx.children.js.jsx"],
+      "settings": {
+        "foreground": "txtDefault"
+      }
+    },
+    {
+      "name": "Types",
+      "scope": ["entity.name.type.tsx", "entity.name.type.interface.tsx"],
+      "settings": {
+        "foreground": "tkBlue1"
       }
     },
     // HTML ----------------------------------------
@@ -419,7 +490,7 @@
     },
     // CSS ----------------------------------------
     {
-      "name": "CSS Selector",
+      "name": "CSS Selector name",
       "scope": [
         "entity.name.tag.css",
         "entity.other.attribute-name.css",
@@ -429,6 +500,23 @@
       ],
       "settings": {
         "foreground": "tkOrangeYellow2"
+      }
+    },
+    {
+      "name": "CSS Selector punctuation",
+      "scope": ["punctuation.definition.entity.css"],
+      "settings": {
+        "foreground": "txtDefault"
+      }
+    },
+    {
+      "name": "CSS Selector Special",
+      "scope": [
+        "entity.name.tag.wildcard.css",
+        "entity.other.attribute-name.pseudo-element.css"
+      ],
+      "settings": {
+        "foreground": "tkRed1"
       }
     },
     {

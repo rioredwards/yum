@@ -3,6 +3,9 @@
   "displayName": "Yum",
   "description": "A yummy colortheme",
   "version": "0.0.1",
+  "scripts": {
+    "sync": "node replaceInFile.js watch"
+  },
   "engines": {
     "vscode": "^1.74.0"
   },
