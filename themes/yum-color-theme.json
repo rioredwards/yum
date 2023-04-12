@@ -265,7 +265,11 @@
     },
     {
       "name": "Functions",
-      "scope": ["entity.name.function", "support.function", "support.constant.handlebars"],
+      "scope": [
+        "entity.name.function",
+        "support.function",
+        "support.constant.handlebars"
+      ],
       "settings": {
         "foreground": "#6bc1be",
         "fontStyle": "bold"
@@ -323,35 +327,50 @@
     // TYPESCRIPT ----------------------------------------
     {
       "name": "Typescript: Basic Types",
-      "scope": ["support.type.primitive.ts"],
+      "scope": ["support.type.primitive.ts", "support.type.primitive.tsx"],
       "settings": {
         "foreground": "#6698c9"
       }
     },
     {
       "name": "Typescript: Built-in Types",
-      "scope": ["support.type.builtin.ts"],
+      "scope": ["support.type.builtin.ts", "support.type.builtin.tsx"],
       "settings": {
         "foreground": "#6698c9"
       }
     },
     {
       "name": "Typescript: User-Defined Types + Type Aliases",
-      "scope": ["entity.name.type.ts", "entity.name.type.alias.ts"],
+      "scope": [
+        "entity.name.type.ts",
+        "entity.name.type.tsx",
+        "entity.name.type.alias.ts",
+        "entity.name.type.alias.tsx",
+        "entity.name.type.module.tsx"
+      ],
       "settings": {
         "foreground": "#7bc4df"
       }
     },
     {
       "name": "Typescript: Interfaces, Enums",
-      "scope": ["entity.name.type.interface.ts", "entity.name.type.enum.ts"],
+      "scope": [
+        "entity.name.type.interface.ts",
+        "entity.name.type.interface.tsx",
+        "entity.name.type.enum.ts",
+        "entity.name.type.enum.tsx"
+      ],
       "settings": {
         "foreground": "#69afb6"
       }
     },
     {
       "name": "Typescript: Classes",
-      "scope": ["entity.name.type.class.ts", "entity.other.inherited-class.ts", "support.class.ts"],
+      "scope": [
+        "entity.name.type.class.ts",
+        "entity.other.inherited-class.ts",
+        "support.class.ts"
+      ],
       "settings": {
         "foreground": "#6bc1be"
       }
@@ -365,7 +384,10 @@
     },
     {
       "name": "Typescript: Directives",
-      "scope": ["entity.name.tag.directive.ts", "entity.other.attribute-name.directive.ts"],
+      "scope": [
+        "entity.name.tag.directive.ts",
+        "entity.other.attribute-name.directive.ts"
+      ],
       "settings": {
         "foreground": "#a067c6"
       }
@@ -413,7 +435,10 @@
     },
     {
       "name": "Attribute",
-      "scope": ["entity.other.attribute-name.js", "entity.other.attribute-name.tsx"],
+      "scope": [
+        "entity.other.attribute-name.js",
+        "entity.other.attribute-name.tsx"
+      ],
       "settings": {
         "foreground": "#E79F56"
       }
@@ -423,6 +448,13 @@
       "scope": ["meta.jsx.children.js", "meta.jsx.children.js.jsx"],
       "settings": {
         "foreground": "#cccccc"
+      }
+    },
+    {
+      "name": "Types",
+      "scope": ["entity.name.type.tsx", "entity.name.type.interface.tsx"],
+      "settings": {
+        "foreground": "#6698c9"
       }
     },
     // HTML ----------------------------------------
@@ -441,7 +473,10 @@
     },
     {
       "name": "HTML punctuation",
-      "scope": ["punctuation.definition.tag.begin.html", "punctuation.definition.tag.end.html"],
+      "scope": [
+        "punctuation.definition.tag.begin.html",
+        "punctuation.definition.tag.end.html"
+      ],
       "settings": {
         "foreground": "#53a992"
       }
@@ -455,7 +490,7 @@
     },
     // CSS ----------------------------------------
     {
-      "name": "CSS Selector",
+      "name": "CSS Selector name",
       "scope": [
         "entity.name.tag.css",
         "entity.other.attribute-name.css",
@@ -468,8 +503,28 @@
       }
     },
     {
+      "name": "CSS Selector punctuation",
+      "scope": ["punctuation.definition.entity.css"],
+      "settings": {
+        "foreground": "#cccccc"
+      }
+    },
+    {
+      "name": "CSS Selector Special",
+      "scope": [
+        "entity.name.tag.wildcard.css",
+        "entity.other.attribute-name.pseudo-element.css"
+      ],
+      "settings": {
+        "foreground": "#F07178"
+      }
+    },
+    {
       "name": "CSS properties",
-      "scope": ["support.type.property-name.css", "support.type.vendored.property-name.css"],
+      "scope": [
+        "support.type.property-name.css",
+        "support.type.vendored.property-name.css"
+      ],
       "settings": {
         "foreground": "#6bc1be"
       }
