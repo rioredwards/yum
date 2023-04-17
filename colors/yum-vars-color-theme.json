@@ -457,6 +457,46 @@
         "foreground": "tkBlue1"
       }
     },
+    // GRAPHQL ----------------------------------------
+    {
+      "name": "Variables",
+      "scope": ["variable.graphql"],
+      "settings": {
+        "foreground": "tkPink2"
+      }
+    },
+    {
+      "name": "Parameters",
+      "scope": ["variable.parameter.graphql"],
+      "settings": {
+        "foreground": "tkIndigo1"
+      }
+    },
+    {
+      "name": "Types, Primitives, Built-ins",
+      "scope": [
+        "support.type.graphql",
+        "support.type.builtin.graphql",
+        "support.type.primitive.graphql"
+      ],
+      "settings": {
+        "foreground": "txtDefault"
+      }
+    },
+    {
+      "name": "Other",
+      "scope": [
+        "support.type.object.graphql",
+        "support.type.enum.graphql",
+        "entity.scalar.graphql",
+        "entity.name.tag.directive.graphql",
+        "entity.name.tag.graphql",
+        "constant.character.enum.graphql"
+      ],
+      "settings": {
+        "foreground": "tkViolet1"
+      }
+    },
     // HTML ----------------------------------------
     {
       "scope": "string.quoted.double.html",
