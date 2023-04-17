@@ -115,7 +115,10 @@
     "terminal.ansiBrightBlue": "terminalBrightBlue",
     "terminal.ansiBrightMagenta": "terminalBrightMagenta",
     "terminal.ansiBrightCyan": "terminalBrightCyan",
-    "terminal.ansiBrightWhite": "terminalBrightWhite"
+    "terminal.ansiBrightWhite": "terminalBrightWhite",
+
+    "widget.border": "wgBorder",
+    "widget.shadow": "wgShadow"
   },
   "tokenColors": [
     /* General */

@@ -1,6 +1,9 @@
 {
   "transparent": "#00000000",
 
+  "wgBorder": "#00c3ff6a",
+  "wgShadow": "#00c3ff36",
+
   "bgDark1": "#212121",
   "bgDark2": "#272727",
   "bgLight1": "#2F2F2F",
@@ -85,7 +88,5 @@
   "terminalBrightBlue": "#83a598",
   "terminalBrightMagenta": "#d3869b",
   "terminalBrightCyan": "#8ec07c",
-  "terminalBrightWhite": "#ebdbb2",
-
-  "Test-color": "#a280ec"
+  "terminalBrightWhite": "#ebdbb2"
 }
