@@ -290,6 +290,13 @@
       }
     },
     {
+      "name": "New",
+      "scope": ["keyword.operator.new"],
+      "settings": {
+        "foreground": "#34b73c"
+      }
+    },
+    {
       "name": "Export & Import",
       "scope": ["keyword.control.export", "keyword.control.import"],
       "settings": {
@@ -322,6 +329,13 @@
       "scope": "string.quoted.double.js",
       "settings": {
         "foreground": "#509151"
+      }
+    },
+    {
+      "name": "exports & module.exports",
+      "scope": "support.type.object.module.js",
+      "settings": {
+        "foreground": "#62b464"
       }
     },
     // TYPESCRIPT ----------------------------------------
@@ -390,13 +404,6 @@
       ],
       "settings": {
         "foreground": "#a067c6"
-      }
-    },
-    {
-      "name": "Typescript: New",
-      "scope": ["keyword.operator.new.ts"],
-      "settings": {
-        "foreground": "#34b73c"
       }
     },
     {
