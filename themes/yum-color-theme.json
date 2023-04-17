@@ -467,6 +467,46 @@
         "foreground": "#6095c9"
       }
     },
+    // SVELTE ----------------------------------------
+    {
+      "name": "Tag",
+      "scope": ["entity.name.tag.svelte"],
+      "settings": {
+        "foreground": "#CF6A4C"
+      }
+    },
+    {
+      "name": "Attribute",
+      "scope": ["entity.other.attribute-name.svelte"],
+      "settings": {
+        "foreground": "#E79F56"
+      }
+    },
+    {
+      "name": "Punctuation",
+      "scope": [
+        "punctuation.definition.variable.svelte",
+        "punctuation.definition.tag.end.svelte",
+        "punctuation.definition.tag.begin.svelte"
+      ],
+      "settings": {
+        "foreground": "#c8c8c8"
+      }
+    },
+    {
+      "name": "Inner-Text",
+      "scope": ["text.svelte"],
+      "settings": {
+        "foreground": "#cccccc"
+      }
+    },
+    {
+      "name": "Types",
+      "scope": ["entity.name.type.svelte"],
+      "settings": {
+        "foreground": "#6095c9"
+      }
+    },
     // PYTHON ----------------------------------------
     {
       "name": "Source Python",
@@ -523,7 +563,7 @@
         "meta.attribute.python"
       ],
       "settings": {
-        "foreground": "#e2c07d"
+        "foreground": "#dcb871"
       }
     },
     {

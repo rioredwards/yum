@@ -467,6 +467,46 @@
         "foreground": "tkBlue1"
       }
     },
+    // SVELTE ----------------------------------------
+    {
+      "name": "Tag",
+      "scope": ["entity.name.tag.svelte"],
+      "settings": {
+        "foreground": "tkRedOrange2"
+      }
+    },
+    {
+      "name": "Attribute",
+      "scope": ["entity.other.attribute-name.svelte"],
+      "settings": {
+        "foreground": "tkOrangeYellow2"
+      }
+    },
+    {
+      "name": "Punctuation",
+      "scope": [
+        "punctuation.definition.variable.svelte",
+        "punctuation.definition.tag.end.svelte",
+        "punctuation.definition.tag.begin.svelte"
+      ],
+      "settings": {
+        "foreground": "tkWhite2"
+      }
+    },
+    {
+      "name": "Inner-Text",
+      "scope": ["text.svelte"],
+      "settings": {
+        "foreground": "txtDefault"
+      }
+    },
+    {
+      "name": "Types",
+      "scope": ["entity.name.type.svelte"],
+      "settings": {
+        "foreground": "tkBlue1"
+      }
+    },
     // PYTHON ----------------------------------------
     {
       "name": "Source Python",
