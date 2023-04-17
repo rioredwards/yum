@@ -157,7 +157,7 @@
       "name": "invalid",
       "scope": "invalid",
       "settings": {
-        "foreground": "tkError"
+        "foreground": "tkFalse"
       }
     },
     {
@@ -462,6 +462,80 @@
       "scope": ["entity.name.type.tsx", "entity.name.type.interface.tsx"],
       "settings": {
         "foreground": "tkBlue1"
+      }
+    },
+    // PYTHON ----------------------------------------
+    {
+      "name": "Source Python",
+      "scope": "source.python",
+      "settings": {
+        "foreground": "tkOrangeYellow2"
+      }
+    },
+    {
+      "name": "Python Function Call",
+      "scope": [
+        "meta.function-call.python",
+        "meta.function-call.generic.python"
+      ],
+      "settings": {
+        "foreground": "tkBlue1"
+      }
+    },
+    {
+      "name": "Python Indexed Name",
+      "scope": ["meta.indexed-name.python"],
+      "settings": {
+        "foreground": "tkTurquoise1"
+      }
+    },
+    {
+      "name": "Language Constants in Python",
+      "scope": "constant.language.python",
+      "settings": {
+        "foreground": "tkFalse"
+      }
+    },
+    {
+      "name": "Python Function Parameter and Arguments",
+      "scope": [
+        "variable.parameter.function.python",
+        "meta.function-call.arguments.python"
+      ],
+      "settings": {
+        "foreground": "tkFalse"
+      }
+    },
+    {
+      "name": "Punctuations in Python",
+      "scope": "punctuation.python",
+      "settings": {
+        "foreground": "tkFalse"
+      }
+    },
+    {
+      "name": "Stuff Python",
+      "scope": [
+        "entity.name.function.decorator.python",
+        "meta.attribute.python"
+      ],
+      "settings": {
+        "foreground": "tkYellow1"
+      }
+    },
+    {
+      "name": "Python Language Variable",
+      "scope": "source.python variable.language.special",
+      "settings": {
+        "foreground": "tkRed1"
+      }
+    },
+    {
+      "name": "Python import control keyword",
+      "scope": "keyword.control",
+      "settings": {
+        "foreground": "tkIndigo1",
+        "fontStyle": "italic"
       }
     },
     // GRAPHQL ----------------------------------------

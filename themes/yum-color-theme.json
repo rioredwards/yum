@@ -157,7 +157,7 @@
       "name": "invalid",
       "scope": "invalid",
       "settings": {
-        "foreground": "tkError"
+        "foreground": "#d33223"
       }
     },
     {
@@ -343,14 +343,14 @@
       "name": "Typescript: Basic Types",
       "scope": ["support.type.primitive.ts", "support.type.primitive.tsx"],
       "settings": {
-        "foreground": "#6698c9"
+        "foreground": "#6095c9"
       }
     },
     {
       "name": "Typescript: Built-in Types",
       "scope": ["support.type.builtin.ts", "support.type.builtin.tsx"],
       "settings": {
-        "foreground": "#6698c9"
+        "foreground": "#6095c9"
       }
     },
     {
@@ -461,7 +461,81 @@
       "name": "Types",
       "scope": ["entity.name.type.tsx", "entity.name.type.interface.tsx"],
       "settings": {
-        "foreground": "#6698c9"
+        "foreground": "#6095c9"
+      }
+    },
+    // PYTHON ----------------------------------------
+    {
+      "name": "Source Python",
+      "scope": "source.python",
+      "settings": {
+        "foreground": "#E79F56"
+      }
+    },
+    {
+      "name": "Python Function Call",
+      "scope": [
+        "meta.function-call.python",
+        "meta.function-call.generic.python"
+      ],
+      "settings": {
+        "foreground": "#6095c9"
+      }
+    },
+    {
+      "name": "Python Indexed Name",
+      "scope": ["meta.indexed-name.python"],
+      "settings": {
+        "foreground": "#6bc1be"
+      }
+    },
+    {
+      "name": "Language Constants in Python",
+      "scope": "constant.language.python",
+      "settings": {
+        "foreground": "#d33223"
+      }
+    },
+    {
+      "name": "Python Function Parameter and Arguments",
+      "scope": [
+        "variable.parameter.function.python",
+        "meta.function-call.arguments.python"
+      ],
+      "settings": {
+        "foreground": "#d33223"
+      }
+    },
+    {
+      "name": "Punctuations in Python",
+      "scope": "punctuation.python",
+      "settings": {
+        "foreground": "#d33223"
+      }
+    },
+    {
+      "name": "Stuff Python",
+      "scope": [
+        "entity.name.function.decorator.python",
+        "meta.attribute.python"
+      ],
+      "settings": {
+        "foreground": "#e2c07d"
+      }
+    },
+    {
+      "name": "Python Language Variable",
+      "scope": "source.python variable.language.special",
+      "settings": {
+        "foreground": "#F07178"
+      }
+    },
+    {
+      "name": "Python import control keyword",
+      "scope": "keyword.control",
+      "settings": {
+        "foreground": "#7485d0",
+        "fontStyle": "italic"
       }
     },
     // GRAPHQL ----------------------------------------
