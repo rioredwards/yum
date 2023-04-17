@@ -469,10 +469,17 @@
     },
     // SVELTE ----------------------------------------
     {
-      "name": "Tag",
+      "name": "Tag (component)",
       "scope": ["entity.name.tag.svelte"],
       "settings": {
         "foreground": "tkRedOrange2"
+      }
+    },
+    {
+      "name": "Custom Tag (component)",
+      "scope": ["support.class.component.svelte"],
+      "settings": {
+        "foreground": "tkRed1"
       }
     },
     {
