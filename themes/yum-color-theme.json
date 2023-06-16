@@ -327,6 +327,44 @@
         "foreground": "#c8c8c8"
       }
     },
+    // PHP ----------------------------------------
+    {
+      "name": "tag PHP",
+      "scope": [
+        "punctuation.section.embedded.begin.php",
+        "punctuation.section.embedded.end.php"
+      ],
+      "settings": {
+        "foreground": "#6095c9"
+      }
+    },
+    {
+      "name": "Variable declaration PHP",
+      "scope": ["punctuation.definition.variable.php"],
+      "settings": {
+        "foreground": "#53a992"
+      }
+    },
+    {
+      "name": "Variable declaration PHP",
+      "scope": ["keyword.operator.logical.php"],
+      "settings": {
+        "foreground": "#7485d0"
+      }
+    },
+    {
+      "name": "punctuation PHP",
+      "scope": [
+        "punctuation.terminator.expression.php",
+        "punctuation.definition.string.end.php",
+        "punctuation.definition.string.begin.php",
+        "keyword.operator.class.php",
+        "keyword.operator.assignment.php"
+      ],
+      "settings": {
+        "foreground": "#c8c8c8"
+      }
+    },
     // JAVASCRIPT ----------------------------------------
     {
       "scope": "string.quoted.double.js",
