@@ -365,6 +365,62 @@
         "foreground": "#c8c8c8"
       }
     },
+    // RUBY ----------------------------------------
+    {
+      "name": "Tag Ruby",
+      "scope": [
+        "punctuation.section.embedded.begin.erb",
+        "punctuation.section.embedded.end.erb"
+      ],
+      "settings": {
+        "foreground": "#F07178"
+      }
+    },
+    {
+      "name": "Class Ruby",
+      "scope": ["support.class.ruby", "entity.name.type.class.ruby"],
+      "settings": {
+        "foreground": "#F07178"
+      }
+    },
+    {
+      "name": "Module Ruby",
+      "scope": ["entity.name.type.module.ruby"],
+      "settings": {
+        "foreground": "#F07178"
+      }
+    },
+    {
+      "name": "Constant Ruby",
+      "scope": ["constant.language.ruby"],
+      "settings": {
+        "foreground": "#d67c6e"
+      }
+    },
+    {
+      "name": "Variable Ruby",
+      "scope": ["variable.other.readwrite.instance.ruby"],
+      "settings": {
+        "foreground": "#CF6A4C"
+      }
+    },
+    {
+      "name": "Operator Ruby",
+      "scope": [
+        "keyword.operator.arithmetic.ruby",
+        "punctuation.separator.inheritance.ruby"
+      ],
+      "settings": {
+        "foreground": "#c8c8c8"
+      }
+    },
+    {
+      "name": "Punctuation Ruby",
+      "scope": ["punctuation.definition.variable.ruby"],
+      "settings": {
+        "foreground": "#c8c8c8"
+      }
+    },
     // JAVASCRIPT ----------------------------------------
     {
       "scope": "string.quoted.double.js",
@@ -532,7 +588,9 @@
       "scope": [
         "punctuation.definition.variable.svelte",
         "punctuation.definition.tag.end.svelte",
-        "punctuation.definition.tag.begin.svelte"
+        "punctuation.definition.tag.begin.svelte",
+        "meta.embedded.block.svelte",
+        "meta.embedded.expression.svelte"
       ],
       "settings": {
         "foreground": "#c8c8c8"
