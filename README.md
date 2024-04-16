@@ -1,6 +1,6 @@
 # Yum
 
-Dark, Smooth, Rich, Creamy... Wait, what are we talking about?
+Dark, Smooth, Rich, Creamy... Yum.
 
 ![Yum Theme](https://raw.githubusercontent.com/rioredwards/yum/main/images/Yum_Screenshot.png)
 
