@@ -1,6 +1,9 @@
 {
   "transparent": "#00000000",
 
+  "wgBorder": "#00c3ff6a",
+  "wgShadow": "#00c3ff36",
+
   "bgDark1": "#212121",
   "bgDark2": "#272727",
   "bgLight1": "#2F2F2F",
@@ -33,10 +36,10 @@
   "tkRedOrange2": "#CF6A4C",
   "tkOrange1": "#c98f65",
   "tkOrange2": "#b37142",
-  "tkOrangeYellow1": "#cea470",
+  "tkOrangeYellow1": "#ddab61",
   "tkOrangeYellow2": "#E79F56",
-  "tkYellow1": "#d7bd74",
-  "tkYellow2": "#d4ae4e",
+  "tkYellow1": "#dcb871",
+  "tkYellow2": "#d5aa3e",
   "tkYellowGreen1": "#9bb572",
   "tkYellowGreen2": "#6A8759",
   "tkGreen1": "#62b464",
@@ -46,7 +49,7 @@
   "tkTurquoise1": "#6bc1be",
   "tkTurquoise2": "#69afb6",
   "tkBabyBlue1": "#7bc4df",
-  "tkBlue1": "#6698c9",
+  "tkBlue1": "#6095c9",
   "tkBlue2": "#4373a3",
   "tkIndigo1": "#7485d0",
   "tkIndigo2": "#5a5db9",
@@ -85,7 +88,5 @@
   "terminalBrightBlue": "#83a598",
   "terminalBrightMagenta": "#d3869b",
   "terminalBrightCyan": "#8ec07c",
-  "terminalBrightWhite": "#ebdbb2",
-
-  "Test-color": "#a280ec"
+  "terminalBrightWhite": "#ebdbb2"
 }

@@ -1,8 +1,30 @@
 {
   "name": "yum",
   "displayName": "Yum",
-  "description": "A yummy colortheme",
-  "version": "0.0.1",
+  "description": "A yummy color theme",
+  "version": "1.0.0",
+  "publisher": "RioEdwards",
+  "author": "Rio Edwards <rioredwards@gmail.com>",
+  "homepage": "https://github.com/rioredwards/yum",
+  "keywords": [
+    "yum",
+    "vibes",
+    "darcula",
+    "color",
+    "theme",
+    "color theme",
+    "dark theme",
+    "rio",
+    "rio edwards",
+    "rioredwards"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rioredwards/yum.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rioredwards/yum/issues"
+  },
   "scripts": {
     "sync": "node replaceInFile.js watch"
   },
@@ -10,7 +32,8 @@
     "vscode": "^1.74.0"
   },
   "categories": [
-    "Themes"
+    "Themes",
+    "Other"
   ],
   "contributes": {
     "themes": [

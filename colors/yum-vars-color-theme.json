@@ -115,7 +115,10 @@
     "terminal.ansiBrightBlue": "terminalBrightBlue",
     "terminal.ansiBrightMagenta": "terminalBrightMagenta",
     "terminal.ansiBrightCyan": "terminalBrightCyan",
-    "terminal.ansiBrightWhite": "terminalBrightWhite"
+    "terminal.ansiBrightWhite": "terminalBrightWhite",
+
+    "widget.border": "wgBorder",
+    "widget.shadow": "wgShadow"
   },
   "tokenColors": [
     /* General */
@@ -157,7 +160,7 @@
       "name": "invalid",
       "scope": "invalid",
       "settings": {
-        "foreground": "tkError"
+        "foreground": "tkFalse"
       }
     },
     {
@@ -290,6 +293,13 @@
       }
     },
     {
+      "name": "New",
+      "scope": ["keyword.operator.new"],
+      "settings": {
+        "foreground": "tkTrue"
+      }
+    },
+    {
       "name": "Export & Import",
       "scope": ["keyword.control.export", "keyword.control.import"],
       "settings": {
@@ -317,11 +327,112 @@
         "foreground": "tkWhite2"
       }
     },
+    // PHP ----------------------------------------
+    {
+      "name": "tag PHP",
+      "scope": [
+        "punctuation.section.embedded.begin.php",
+        "punctuation.section.embedded.end.php"
+      ],
+      "settings": {
+        "foreground": "tkBlue1"
+      }
+    },
+    {
+      "name": "Variable declaration PHP",
+      "scope": ["punctuation.definition.variable.php"],
+      "settings": {
+        "foreground": "tkTeal2"
+      }
+    },
+    {
+      "name": "Variable declaration PHP",
+      "scope": ["keyword.operator.logical.php"],
+      "settings": {
+        "foreground": "tkIndigo1"
+      }
+    },
+    {
+      "name": "punctuation PHP",
+      "scope": [
+        "punctuation.terminator.expression.php",
+        "punctuation.definition.string.end.php",
+        "punctuation.definition.string.begin.php",
+        "keyword.operator.class.php",
+        "keyword.operator.assignment.php"
+      ],
+      "settings": {
+        "foreground": "tkWhite2"
+      }
+    },
+    // RUBY ----------------------------------------
+    {
+      "name": "Tag Ruby",
+      "scope": [
+        "punctuation.section.embedded.begin.erb",
+        "punctuation.section.embedded.end.erb"
+      ],
+      "settings": {
+        "foreground": "tkRed1"
+      }
+    },
+    {
+      "name": "Class Ruby",
+      "scope": ["support.class.ruby", "entity.name.type.class.ruby"],
+      "settings": {
+        "foreground": "tkRed1"
+      }
+    },
+    {
+      "name": "Module Ruby",
+      "scope": ["entity.name.type.module.ruby"],
+      "settings": {
+        "foreground": "tkRed1"
+      }
+    },
+    {
+      "name": "Constant Ruby",
+      "scope": ["constant.language.ruby"],
+      "settings": {
+        "foreground": "tkRedOrange1"
+      }
+    },
+    {
+      "name": "Variable Ruby",
+      "scope": ["variable.other.readwrite.instance.ruby"],
+      "settings": {
+        "foreground": "tkRedOrange2"
+      }
+    },
+    {
+      "name": "Operator Ruby",
+      "scope": [
+        "keyword.operator.arithmetic.ruby",
+        "punctuation.separator.inheritance.ruby"
+      ],
+      "settings": {
+        "foreground": "tkWhite2"
+      }
+    },
+    {
+      "name": "Punctuation Ruby",
+      "scope": ["punctuation.definition.variable.ruby"],
+      "settings": {
+        "foreground": "tkWhite2"
+      }
+    },
     // JAVASCRIPT ----------------------------------------
     {
       "scope": "string.quoted.double.js",
       "settings": {
         "foreground": "tkGreen2"
+      }
+    },
+    {
+      "name": "exports & module.exports",
+      "scope": "support.type.object.module.js",
+      "settings": {
+        "foreground": "tkGreen1"
       }
     },
     // TYPESCRIPT ----------------------------------------
@@ -393,13 +504,6 @@
       }
     },
     {
-      "name": "Typescript: New",
-      "scope": ["keyword.operator.new.ts"],
-      "settings": {
-        "foreground": "tkTrue"
-      }
-    },
-    {
       "name": "Typescript: Delete",
       "scope": ["keyword.operator.expression.delete.ts"],
       "settings": {
@@ -455,6 +559,169 @@
       "scope": ["entity.name.type.tsx", "entity.name.type.interface.tsx"],
       "settings": {
         "foreground": "tkBlue1"
+      }
+    },
+    // SVELTE ----------------------------------------
+    {
+      "name": "Tag (component)",
+      "scope": ["entity.name.tag.svelte"],
+      "settings": {
+        "foreground": "tkRedOrange2"
+      }
+    },
+    {
+      "name": "Custom Tag (component)",
+      "scope": ["support.class.component.svelte"],
+      "settings": {
+        "foreground": "tkRed1"
+      }
+    },
+    {
+      "name": "Attribute",
+      "scope": ["entity.other.attribute-name.svelte"],
+      "settings": {
+        "foreground": "tkOrangeYellow2"
+      }
+    },
+    {
+      "name": "Punctuation",
+      "scope": [
+        "punctuation.definition.variable.svelte",
+        "punctuation.definition.tag.end.svelte",
+        "punctuation.definition.tag.begin.svelte",
+        "meta.embedded.block.svelte",
+        "meta.embedded.expression.svelte"
+      ],
+      "settings": {
+        "foreground": "tkWhite2"
+      }
+    },
+    {
+      "name": "Inner-Text",
+      "scope": ["text.svelte"],
+      "settings": {
+        "foreground": "txtDefault"
+      }
+    },
+    {
+      "name": "Types",
+      "scope": ["entity.name.type.svelte"],
+      "settings": {
+        "foreground": "tkBlue1"
+      }
+    },
+    // PYTHON ----------------------------------------
+    {
+      "name": "Source Python",
+      "scope": "source.python",
+      "settings": {
+        "foreground": "tkOrangeYellow2"
+      }
+    },
+    {
+      "name": "Python Function Call",
+      "scope": [
+        "meta.function-call.python",
+        "meta.function-call.generic.python"
+      ],
+      "settings": {
+        "foreground": "tkBlue1"
+      }
+    },
+    {
+      "name": "Python Indexed Name",
+      "scope": ["meta.indexed-name.python"],
+      "settings": {
+        "foreground": "tkTurquoise1"
+      }
+    },
+    {
+      "name": "Language Constants in Python",
+      "scope": "constant.language.python",
+      "settings": {
+        "foreground": "tkFalse"
+      }
+    },
+    {
+      "name": "Python Function Parameter and Arguments",
+      "scope": [
+        "variable.parameter.function.python",
+        "meta.function-call.arguments.python"
+      ],
+      "settings": {
+        "foreground": "tkFalse"
+      }
+    },
+    {
+      "name": "Punctuations in Python",
+      "scope": "punctuation.python",
+      "settings": {
+        "foreground": "tkFalse"
+      }
+    },
+    {
+      "name": "Stuff Python",
+      "scope": [
+        "entity.name.function.decorator.python",
+        "meta.attribute.python"
+      ],
+      "settings": {
+        "foreground": "tkYellow1"
+      }
+    },
+    {
+      "name": "Python Language Variable",
+      "scope": "source.python variable.language.special",
+      "settings": {
+        "foreground": "tkRed1"
+      }
+    },
+    {
+      "name": "Python import control keyword",
+      "scope": "keyword.control",
+      "settings": {
+        "foreground": "tkIndigo1",
+        "fontStyle": "italic"
+      }
+    },
+    // GRAPHQL ----------------------------------------
+    {
+      "name": "Variables",
+      "scope": ["variable.graphql"],
+      "settings": {
+        "foreground": "tkPink2"
+      }
+    },
+    {
+      "name": "Parameters",
+      "scope": ["variable.parameter.graphql"],
+      "settings": {
+        "foreground": "tkIndigo1"
+      }
+    },
+    {
+      "name": "Types, Primitives, Built-ins",
+      "scope": [
+        "support.type.graphql",
+        "support.type.builtin.graphql",
+        "support.type.primitive.graphql"
+      ],
+      "settings": {
+        "foreground": "txtDefault"
+      }
+    },
+    {
+      "name": "Other",
+      "scope": [
+        "support.type.object.graphql",
+        "support.type.enum.graphql",
+        "entity.scalar.graphql",
+        "entity.name.tag.directive.graphql",
+        "entity.name.tag.graphql",
+        "constant.character.enum.graphql"
+      ],
+      "settings": {
+        "foreground": "tkViolet1"
       }
     },
     // HTML ----------------------------------------
