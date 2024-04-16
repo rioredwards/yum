@@ -22,4 +22,4 @@ This theme was inspired by Darcula, Gruvbox, Visual Studio Dark+, Winter Is Comi
 
 ## Authors
 
-Rio Edwards
+[Rio Edwards](https://www.linkedin.com/in/rio-edwards/)
