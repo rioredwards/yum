@@ -1,16 +1,25 @@
-# yum README
+# Yum
 
-## Working with Markdown
+Dark, Smooth, Rich, Creamy... Wait, what are we talking about?
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+![Yum Theme](https://raw.githubusercontent.com/rioredwards/yum/main/images/Yum_Screenshot.png)
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+## Installation
 
-## For more information
+View → Extensions
+Search for Yum
+Click Install
+Click Reload
+File > Preferences > Color Theme > Yum
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+## Feedback
 
-**Enjoy!**
+Feel free to open an issue within this repo if you have any questions, feedback, or suggestions.
+
+## Credits
+
+This theme was inspired by Darcula, Gruvbox, Visual Studio Dark+, Winter Is Coming, and many others.
+
+## Authors
+
+Rio Edwards
