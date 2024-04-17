@@ -2,7 +2,7 @@
   "name": "yum",
   "displayName": "Yum",
   "description": "A yummy color theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "RioEdwards",
   "author": "Rio Edwards <rioredwards@gmail.com>",
   "homepage": "https://github.com/rioredwards/yum",
@@ -44,5 +44,19 @@
       }
     ]
   },
-  "icon": "images/Yum_Logo.png"
+  "icon": "images/Yum_Logo.png",
+  "__metadata": {
+    "id": "e5dfe06b-ec3b-49b5-be8e-95fadc06b936",
+    "publisherId": "9069a9fa-f82b-4a47-b5d8-2817304800b9",
+    "publisherDisplayName": "Rio Edwards",
+    "targetPlatform": "undefined",
+    "isApplicationScoped": false,
+    "updated": true,
+    "isPreReleaseVersion": false,
+    "hasPreReleaseVersion": false,
+    "installedTimestamp": 1713334662153,
+    "pinned": false,
+    "preRelease": false,
+    "source": "gallery"
+  }
 }

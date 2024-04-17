@@ -4,7 +4,7 @@ Dark, Smooth, Rich, Creamy...
 
 ![Yum Banner](https://raw.githubusercontent.com/rioredwards/yum/main/images/Yum_Banner.jpg)
 
-Feast your eyes on Yum, a dark theme with a smooth, modern feel. Equipped with a rich, creamy color palette designed to be easy on the eyes, Yum is bound to become your new favorite. 🍦
+Feast your eyes on Yum: a dark theme with a smooth, modern feel. Equipped with a rich, creamy color palette designed to be easy on the eyes, Yum is bound to become your new favorite. 🍦
 
 ![Yum Screenshot](https://raw.githubusercontent.com/rioredwards/yum/main/images/Yum_Screenshot.png)
 
