@@ -43,5 +43,6 @@
         "path": "./themes/yum-color-theme.json"
       }
     ]
-  }
+  },
+  "icon": "https://raw.githubusercontent.com/rioredwards/yum/main/images/Yum_Logo.png"
 }
