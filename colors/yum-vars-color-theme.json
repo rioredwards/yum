@@ -268,11 +268,7 @@
     },
     {
       "name": "Functions",
-      "scope": [
-        "entity.name.function",
-        "support.function",
-        "support.constant.handlebars"
-      ],
+      "scope": ["entity.name.function", "support.function", "support.constant.handlebars"],
       "settings": {
         "foreground": "tkTurquoise1",
         "fontStyle": "bold"
@@ -330,10 +326,7 @@
     // PHP ----------------------------------------
     {
       "name": "tag PHP",
-      "scope": [
-        "punctuation.section.embedded.begin.php",
-        "punctuation.section.embedded.end.php"
-      ],
+      "scope": ["punctuation.section.embedded.begin.php", "punctuation.section.embedded.end.php"],
       "settings": {
         "foreground": "tkBlue1"
       }
@@ -368,10 +361,7 @@
     // RUBY ----------------------------------------
     {
       "name": "Tag Ruby",
-      "scope": [
-        "punctuation.section.embedded.begin.erb",
-        "punctuation.section.embedded.end.erb"
-      ],
+      "scope": ["punctuation.section.embedded.begin.erb", "punctuation.section.embedded.end.erb"],
       "settings": {
         "foreground": "tkRed1"
       }
@@ -406,10 +396,7 @@
     },
     {
       "name": "Operator Ruby",
-      "scope": [
-        "keyword.operator.arithmetic.ruby",
-        "punctuation.separator.inheritance.ruby"
-      ],
+      "scope": ["keyword.operator.arithmetic.ruby", "punctuation.separator.inheritance.ruby"],
       "settings": {
         "foreground": "tkWhite2"
       }
@@ -477,11 +464,7 @@
     },
     {
       "name": "Typescript: Classes",
-      "scope": [
-        "entity.name.type.class.ts",
-        "entity.other.inherited-class.ts",
-        "support.class.ts"
-      ],
+      "scope": ["entity.name.type.class.ts", "entity.other.inherited-class.ts", "support.class.ts"],
       "settings": {
         "foreground": "tkTurquoise1"
       }
@@ -495,10 +478,7 @@
     },
     {
       "name": "Typescript: Directives",
-      "scope": [
-        "entity.name.tag.directive.ts",
-        "entity.other.attribute-name.directive.ts"
-      ],
+      "scope": ["entity.name.tag.directive.ts", "entity.other.attribute-name.directive.ts"],
       "settings": {
         "foreground": "tkViolet2"
       }
@@ -525,14 +505,20 @@
     // REACT ----------------------------------------
     {
       "name": "Tag",
-      "scope": ["entity.name.tag.js", "entity.name.tag.tsx"],
+      "scope": ["entity.name.tag.open.jsx", "entity.name.tag.close.jsx", "entity.name.tag.tsx"],
       "settings": {
         "foreground": "tkRedOrange2"
       }
     },
     {
       "name": "Component",
-      "scope": ["support.class.component.js", "support.class.component.tsx"],
+      "scope": [
+        "support.class.component.open.js",
+        "support.class.component.close.js",
+        "support.class.component.open.jsx",
+        "support.class.component.close.jsx",
+        "support.class.component.tsx"
+      ],
       "settings": {
         "foreground": "tkRed1"
       }
@@ -541,6 +527,7 @@
       "name": "Attribute",
       "scope": [
         "entity.other.attribute-name.js",
+        "entity.other.attribute-name.jsx",
         "entity.other.attribute-name.tsx"
       ],
       "settings": {
@@ -549,7 +536,7 @@
     },
     {
       "name": "Inner-Text",
-      "scope": ["meta.jsx.children.js", "meta.jsx.children.js.jsx"],
+      "scope": ["meta.jsx.children.js", "JSXNested", "meta.jsx.children.js.jsx"],
       "settings": {
         "foreground": "txtDefault"
       }
@@ -620,10 +607,7 @@
     },
     {
       "name": "Python Function Call",
-      "scope": [
-        "meta.function-call.python",
-        "meta.function-call.generic.python"
-      ],
+      "scope": ["meta.function-call.python", "meta.function-call.generic.python"],
       "settings": {
         "foreground": "tkBlue1"
       }
@@ -644,10 +628,7 @@
     },
     {
       "name": "Python Function Parameter and Arguments",
-      "scope": [
-        "variable.parameter.function.python",
-        "meta.function-call.arguments.python"
-      ],
+      "scope": ["variable.parameter.function.python", "meta.function-call.arguments.python"],
       "settings": {
         "foreground": "tkFalse"
       }
@@ -661,10 +642,7 @@
     },
     {
       "name": "Stuff Python",
-      "scope": [
-        "entity.name.function.decorator.python",
-        "meta.attribute.python"
-      ],
+      "scope": ["entity.name.function.decorator.python", "meta.attribute.python"],
       "settings": {
         "foreground": "tkYellow1"
       }
@@ -740,10 +718,7 @@
     },
     {
       "name": "HTML punctuation",
-      "scope": [
-        "punctuation.definition.tag.begin.html",
-        "punctuation.definition.tag.end.html"
-      ],
+      "scope": ["punctuation.definition.tag.begin.html", "punctuation.definition.tag.end.html"],
       "settings": {
         "foreground": "tkTeal2"
       }
@@ -778,20 +753,14 @@
     },
     {
       "name": "CSS Selector Special",
-      "scope": [
-        "entity.name.tag.wildcard.css",
-        "entity.other.attribute-name.pseudo-element.css"
-      ],
+      "scope": ["entity.name.tag.wildcard.css", "entity.other.attribute-name.pseudo-element.css"],
       "settings": {
         "foreground": "tkRed1"
       }
     },
     {
       "name": "CSS properties",
-      "scope": [
-        "support.type.property-name.css",
-        "support.type.vendored.property-name.css"
-      ],
+      "scope": ["support.type.property-name.css", "support.type.vendored.property-name.css"],
       "settings": {
         "foreground": "tkTurquoise1"
       }

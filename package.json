@@ -50,13 +50,11 @@
     "publisherId": "9069a9fa-f82b-4a47-b5d8-2817304800b9",
     "publisherDisplayName": "Rio Edwards",
     "targetPlatform": "undefined",
-    "isApplicationScoped": false,
-    "updated": true,
+    "updated": false,
     "isPreReleaseVersion": false,
     "hasPreReleaseVersion": false,
-    "installedTimestamp": 1713334662153,
+    "installedTimestamp": 1713373836105,
     "pinned": false,
-    "preRelease": false,
     "source": "gallery"
   }
 }
