@@ -1,60 +1,63 @@
 {
-  "name": "yum",
-  "displayName": "Yum",
-  "description": "A yummy color theme",
-  "version": "1.0.2",
-  "publisher": "RioEdwards",
-  "author": "Rio Edwards <rioredwards@gmail.com>",
-  "homepage": "https://github.com/rioredwards/yum",
-  "keywords": [
-    "yum",
-    "vibes",
-    "darcula",
-    "color",
-    "theme",
-    "color theme",
-    "dark theme",
-    "rio",
-    "rio edwards",
-    "rioredwards"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rioredwards/yum.git"
-  },
-  "bugs": {
-    "url": "https://github.com/rioredwards/yum/issues"
-  },
-  "scripts": {
-    "sync": "node replaceInFile.js watch"
-  },
-  "engines": {
-    "vscode": "^1.74.0"
-  },
-  "categories": [
-    "Themes",
-    "Other"
-  ],
-  "contributes": {
-    "themes": [
-      {
-        "label": "yum",
-        "uiTheme": "vs-dark",
-        "path": "./themes/yum-color-theme.json"
-      }
-    ]
-  },
-  "icon": "images/Yum_Logo.png",
-  "__metadata": {
-    "id": "e5dfe06b-ec3b-49b5-be8e-95fadc06b936",
-    "publisherId": "9069a9fa-f82b-4a47-b5d8-2817304800b9",
-    "publisherDisplayName": "Rio Edwards",
-    "targetPlatform": "undefined",
-    "updated": false,
-    "isPreReleaseVersion": false,
-    "hasPreReleaseVersion": false,
-    "installedTimestamp": 1713373836105,
-    "pinned": false,
-    "source": "gallery"
-  }
+	"name": "yum",
+	"displayName": "Yum",
+	"description": "A yummy color theme",
+	"version": "1.0.2",
+	"publisher": "RioEdwards",
+	"author": "Rio Edwards <rioredwards@gmail.com>",
+	"homepage": "https://github.com/rioredwards/yum",
+	"keywords": [
+		"yum",
+		"vibes",
+		"darcula",
+		"color",
+		"theme",
+		"color theme",
+		"dark theme",
+		"rio",
+		"rio edwards",
+		"rioredwards"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rioredwards/yum.git"
+	},
+	"bugs": {
+		"url": "https://github.com/rioredwards/yum/issues"
+	},
+	"scripts": {
+		"sync": "node replaceInFile.js watch"
+	},
+	"engines": {
+		"vscode": "^1.74.0"
+	},
+	"categories": [
+		"Themes",
+		"Other"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "yum",
+				"uiTheme": "vs-dark",
+				"path": "./themes/yum-color-theme.json"
+			}
+		]
+	},
+	"icon": "images/Yum_Logo.png",
+	"__metadata": {
+		"id": "e5dfe06b-ec3b-49b5-be8e-95fadc06b936",
+		"publisherId": "9069a9fa-f82b-4a47-b5d8-2817304800b9",
+		"publisherDisplayName": "Rio Edwards",
+		"targetPlatform": "undefined",
+		"updated": true,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1718818058986,
+		"pinned": false,
+		"source": "gallery",
+		"isApplicationScoped": false,
+		"preRelease": false,
+		"size": 3994714
+	}
 }
